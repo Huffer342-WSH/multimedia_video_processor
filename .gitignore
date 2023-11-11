@@ -1,0 +1,8 @@
+*.lock
+sources/constraints/constraint_backup
+application/多媒体视频处理魔盒上位机/build
+project/**/*.log
+!project/ipcore/
+
+**/bak/
+**/logbackup/
