@@ -6,27 +6,27 @@ module char_osd #(
     parameter SCREEN_WIDTH = 1920,  //显示器宽度
     parameter SCREEN_HEIGHT = 1080  //显示器高度
 ) (
-    input clk,
-    input resetn,
+    input clk,    //! 时钟
+    input resetn, //! 复位
 
-    input [10:0] cfg_start_posX,
-    input [10:0] cfg_start_posY,
-    input [10:0] cfg_end_posX,
-    input [10:0] cfg_end_posY,
-    input [10:0] cfg_char_width,
-    input [10:0] cfg_char_height,
+    input [10:0] cfg_start_posX,  //!
+    input [10:0] cfg_start_posY,  //!
+    input [10:0] cfg_end_posX,    //!
+    input [10:0] cfg_end_posY,    //!
+    input [10:0] cfg_char_width,  //!
+    input [10:0] cfg_char_height, //!
 
 
     //ram接口
-    output [CHAR_BUFFER_ADDR_WIDTH-1:0] ram_rd_addr,
-    input  [                       7:0] ram_dout,
+    output [CHAR_BUFFER_ADDR_WIDTH-1:0] ram_rd_addr,  //!
+    input  [                       7:0] ram_dout,     //!
 
     //点阵信息输出接口
-    output        m_pixel_data,   //1bit像素点
-    output        m_pixel_valid,
-    input         m_pixel_ready,
-    output [10:0] m_pixel_posX,   // 像素点X坐标
-    output [10:0] m_pixel_posY    //像素点Y坐标
+    output        m_pixel_data,   //! 1bit像素点
+    output        m_pixel_valid,  //! 像素点有效序号
+    input         m_pixel_ready,  //! 从机 准备信号
+    output [10:0] m_pixel_posX,   //!  像素点X坐标
+    output [10:0] m_pixel_posY    //! 像素点Y坐标
 );
 
 

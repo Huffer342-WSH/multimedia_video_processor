@@ -1,18 +1,18 @@
 
 // 数据处理需要 20+2+4=26个周期
 module adjust_color (
-    input clk,
-    input resetn,
+    input clk,    //! 时钟
+    input resetn, //! 复位
 
-    input signed [8:0] h_s_data,
-    input signed [8:0] s_s_data,
-    input signed [8:0] v_s_data,
+    input signed [8:0] h_s_data,  //! 色相调整值
+    input signed [8:0] s_s_data,  //! 饱和度调整值
+    input signed [8:0] v_s_data,  //! 明度调整值
 
-    input [23:0] pixel_s_data,
-    input pixel_s_valid,
+    input [23:0] pixel_s_data,  //! 输入像素点-RGB
+    input pixel_s_valid,  //! 输入有效信号
 
-    output [23:0] res_m_data,
-    output res_m_valid
+    output [23:0] res_m_data,  //! 输出像素点
+    output res_m_valid  //! 输出有效信号
 );
 
   wire [7:0] raw_h_data;

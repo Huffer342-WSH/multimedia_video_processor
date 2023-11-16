@@ -64,18 +64,20 @@ module sync_vg #(
     parameter HV_OFFSET = 12'd0
 
 ) (
-    input  clk,
-    input  rst,
-    output vs_out,
-    output hs_out,
-    output de_re,
-    output ddr_rd_en,
+    input clk,  //!时钟
+    input rst,  //!复位
 
-    input [1:0] rd_mode,
-    input [15:0] ddr_image_data,
-    output [15:0] hdmi_image_data,
-    output reg [11:0] pos_x,
-    output reg [11:0] pos_y
+
+    input [1:0] rd_mode,  //! 读取模式
+    output ddr_rd_en,  //! 读取请求
+    input [15:0] ddr_image_data,  //! 读取数据
+
+    output vs_out,  //!垂直同步
+    output hs_out,  //!水平同步
+    output de_re,  //!数据有效
+    output [15:0] hdmi_image_data,  //! 输出像素点RGB数据
+    output reg [11:0] pos_x,  //! 像素点对应的X坐标
+    output reg [11:0] pos_y  //! 像素点对应的Y坐标
 );
 
   reg [X_BITS-1:0] h_count;

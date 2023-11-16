@@ -85,7 +85,7 @@ module ddr_addr_ctr #(
     input init_calib_complete
 );
   localparam CLK_FRE_NUM = 100_000_000;
-  localparam CLK_CNT_NUM = CLK_FRE_NUM / 32;
+  localparam CLK_CNT_NUM = CLK_FRE_NUM / 120;
 
 
 

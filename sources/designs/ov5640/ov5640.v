@@ -1,57 +1,38 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2023/10/13 23:03:50
-// Design Name: 
-// Module Name: mix_image
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
+`timescale 1ns / 100ps
 
 module ov5640 #(
     parameter   IMAGE_SIZE = 11,
     parameter   IMAGE_W    = 1280,
     parameter   IMAGE_H    = 720
 ) (
-    input clk_50M,
-    input clk_25M,
-    input rst,
+    input clk_50M,  //! 50M时钟
+    input clk_25M,  //! 20M时钟
+    input rst,  //! 复位信号
 
-    inout        cmos1_scl,    //cmos1 i2c 
-    inout        cmos1_sda,    //cmos1 i2c 
-    input        cmos1_vsync,  //cmos1 vsync
-    input        cmos1_href,   //cmos1 hsync refrence,data valid
-    input        cmos1_pclk,   //cmos1 pxiel clock
-    input  [7:0] cmos1_data,   //cmos1 data
-    output       cmos1_reset,  //cmos1 reset
+    inout        cmos1_scl,    //! CMOS1 IIC_SCL信号
+    inout        cmos1_sda,    //! CMOS1 IIC_SDA信号
+    input        cmos1_vsync,  //! CMOS1 垂直同步信号
+    input        cmos1_href,   //! CMOS1 数据有效信号
+    input        cmos1_pclk,   //! CMOS1 像素时钟
+    input  [7:0] cmos1_data,   //! CMOS1 数据
+    output       cmos1_reset,  //! CMOS1 复位
 
-    inout        cmos2_scl,    //cmos2 i2c 
-    inout        cmos2_sda,    //cmos2 i2c 
-    input        cmos2_vsync,  //cmos2 vsync
-    input        cmos2_href,   //cmos2 hsync refrence,data valid
-    input        cmos2_pclk,   //cmos2 pxiel clock
-    input  [7:0] cmos2_data,   //cmos2 data
-    output       cmos2_reset,  //cmos2 reset
+    inout        cmos2_scl,    //! CMOS2 IIC_SCL信号
+    inout        cmos2_sda,    //! CMOS2 IIC_SDA信号
+    input        cmos2_vsync,  //! CMOS2 垂直同步信号
+    input        cmos2_href,   //! CMOS2 数据有效信号
+    input        cmos2_pclk,   //! CMOS2 像素时钟
+    input  [7:0] cmos2_data,   //! CMOS2 数据
+    output       cmos2_reset,  //! CMOS2 复位
 
-    input                wr_clk,
-    input                wr_rst,
-    input         [ 7:0] shift_w,
-    input  signed [ 7:0] shift_h,
-    output               data_vs,
-    output               data_out_valid,
-    output        [15:0] data_out
+    input        [7:0] shift_w,  //!图像拼接移位 横向
+    input signed [7:0] shift_h,  //! 图像拼接移位 纵向
+
+    input         wr_clk,          //! 数据输出 时钟
+    input         wr_rst,          //! 数据输出 复位
+    output        data_vs,         //! 数据输出 垂直同步信号
+    output        data_out_valid,  //! 视频输出 有效信号
+    output [15:0] data_out         //! 数据输出 数据
 );
 
 

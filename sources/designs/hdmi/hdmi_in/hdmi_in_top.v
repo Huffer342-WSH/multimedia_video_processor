@@ -25,19 +25,19 @@ module hdmi_in_top #(
     parameter IMAGE_H    = 720,
     parameter IMAGE_SIZE = 11
 ) (
-    input clk,
-    input rst,
+    input clk,  //! 时钟
+    input rst,  //! 复位
 
-    input [7:0] r_in,
-    input [7:0] g_in,
-    input [7:0] b_in,
-    input vs_in,
-    input hs_in,
-    input de_in,
+    input [7:0] r_in,  //! 像素点Red通道
+    input [7:0] g_in,  //! 像素点Green通道
+    input [7:0] b_in,  //! 像素点Blue通道
+    input vs_in,  //! 垂直同步信号
+    input hs_in,  //! 水平同步信号
+    input de_in,  //! 数据有效信号
 
-    output [15:0] hdmi_data,
-    output hdmi_data_valid,
-    output hdmi_vs_out
+    output [15:0] hdmi_data,  //! HDMI输出数据
+    output hdmi_data_valid,  //! HDMI输出有效信号
+    output hdmi_vs_out  //! HDMI输出输出垂直同步
 
 );
   //localparam   EXTRACT = 2 ;

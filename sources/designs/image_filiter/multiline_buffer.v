@@ -5,21 +5,21 @@
 
 
 module multiline_buffer #(
-    parameter reg [10:0] IMAGE_WIDTH = 1920,  // 图像宽度
-    parameter reg [10:0] IMAGE_HEIGHT = 1080,  // 图像高度
-    parameter integer PIXEL_DATA_WIDTH = 16,
-    parameter integer LINES_NUM = 3
+    parameter reg [10:0] IMAGE_WIDTH = 1920,  //! 图像宽度
+    parameter reg [10:0] IMAGE_HEIGHT = 1080,  //! 图像高度
+    parameter integer PIXEL_DATA_WIDTH = 16,  //! 像素宽度
+    parameter integer LINES_NUM = 3  //! 行数
 
 ) (
-    input  clk,
-    input  resetn,
-    output rst_busy,
+    input clk,  //! 时钟
+    input resetn,  //! 复位
+    output rst_busy,  //! FIFO复位忙信号
 
-    input [PIXEL_DATA_WIDTH-1:0] s_pixel_data,
-    input                        s_pixel_valid,
+    input [PIXEL_DATA_WIDTH-1:0] s_pixel_data,  //! 输入数据
+    input                        s_pixel_valid, //! 输入有效信号
 
-    output reg [(LINES_NUM)*PIXEL_DATA_WIDTH-1:0] m_multiline_pixel_data,
-    output reg                                    m_pixel_valid
+    output reg [(LINES_NUM)*PIXEL_DATA_WIDTH-1:0] m_multiline_pixel_data,  //! 输出列向量
+    output reg                                    m_pixel_valid            //! 输出有效信号
 );
 
   localparam integer FifoWidth = 24;

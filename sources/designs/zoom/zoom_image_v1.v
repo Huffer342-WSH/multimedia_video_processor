@@ -26,21 +26,21 @@ module zoom_image_v1 #(
     parameter IMAGE_W    = 1920,
     parameter IMAGE_H    = 1080
 ) (
-    input clk,
-    input rst,
-    input zoom_en,
-    input hdmi_out_en,
-    input data_half_en,
-    input fifo_full,
-    input [3+FRA_WIDTH-1:0] zoom_num,
-    input data_in_valid,
-    input [15:0] data_in,
+    input clk,  //! 时钟
+    input rst,  //! 复位
+    input zoom_en,  //! 缩放使能
+    input hdmi_out_en,  //! HDMI输出使能
+    input data_half_en,  //! 数据减半使能
+    input fifo_full,  //! 输出端FIFO 满信号
+    input [3+FRA_WIDTH-1:0] zoom_num,  //! 缩放系数
+    input data_in_valid,  //!  数据输入-有效
+    input [15:0] data_in,  //! 数据输入-数据
 
-    output data_out_valid,
-    output [15:0] data_out,
-    output imag_addr_valid,
-    output [IMAGE_SIZE-1:0] imag_addr,
-    output reg zoom_done
+    output data_out_valid,  //!  数据输出-有效
+    output [15:0] data_out,  //!  数据输出-数据
+    output imag_addr_valid,  //! 数据读取地址-有效
+    output [IMAGE_SIZE-1:0] imag_addr,  //! 数据读取地址-地址
+    output reg zoom_done  //! 一帧画面缩放完成
 );
 
   localparam IDLE = 7'b000_0001;
@@ -50,8 +50,8 @@ module zoom_image_v1 #(
   localparam WAIT1 = 7'b001_0000;
   localparam ZOOM = 7'b010_0000;
   localparam BLANK = 7'b100_0000;
-  localparam FRA_WIDTH_power = 1 << FRA_WIDTH;
-  localparam MULT_DELAY = 1;
+  localparam FraWidthPower = 1 << FRA_WIDTH;
+  localparam MultDelay = 1;
   reg [6:0] zoom_sta;
 
 
@@ -100,7 +100,7 @@ module zoom_image_v1 #(
           else zoom_sta <= IDLE;
         end
         JUDGE: begin
-          if (delay_cnt == MULT_DELAY + 3) begin
+          if (delay_cnt == MultDelay + 3) begin
             if (judge_cnt_h_valid) zoom_sta <= PARAM;
             else if (fifo_full0) zoom_sta <= BLANK;
             else zoom_sta <= JUDGE;
@@ -189,10 +189,10 @@ module zoom_image_v1 #(
     ram_idle1 <= ram_idle0;
     zoom_sta_param <= (zoom_sta == PARAM) ? 1'b1 : 1'b0;
     judge_cnt_h_valid <= (((judge_cnt_h < (IMAGE_H / 2 - 1)) && (judge_cnt_h >= -(IMAGE_H / 2))) &&
-                          (delay_cnt == MULT_DELAY + 2)) ? 1'b1 : 1'b0;
+                          (delay_cnt == MultDelay + 2)) ? 1'b1 : 1'b0;
     if (zoom_sta == JUDGE) param_delay <= param_delay + 1'b1;
     else param_delay <= 'd0;
-    if (delay_cnt == MULT_DELAY + 1) judge_cnt_h <= mult_h[FRA_WIDTH+:IMAGE_SIZE+3];
+    if (delay_cnt == MultDelay + 1) judge_cnt_h <= mult_h[FRA_WIDTH+:IMAGE_SIZE+3];
     if (zoom_sta == JUDGE) begin
       delay_cnt <= delay_cnt + 1'b1;
     end else delay_cnt <= 'd0;
@@ -627,8 +627,8 @@ module zoom_image_v1 #(
   wire [IMAGE_SIZE+FRA_WIDTH+3-1:0] image_w2_unsigned, image_h2_unsigned;
   reg [IMAGE_SIZE+FRA_WIDTH+3-1:0] zoom_num1;
   wire signed [IMAGE_SIZE+FRA_WIDTH+3-1:0] add_image_w, add_image_h;
-  assign add_image_w = (IMAGE_W / 2) * FRA_WIDTH_power - FRA_WIDTH_power / 2;
-  assign add_image_h = (IMAGE_H / 2) * FRA_WIDTH_power - FRA_WIDTH_power / 2;
+  assign add_image_w = (IMAGE_W / 2) * FraWidthPower - FraWidthPower / 2;
+  assign add_image_h = (IMAGE_H / 2) * FraWidthPower - FraWidthPower / 2;
   assign image_w2_unsigned = image_w2[FRA_WIDTH+:IMAGE_SIZE+3];
   assign image_h2_unsigned = image_h2[FRA_WIDTH+:IMAGE_SIZE+3];
   always @(posedge clk) begin
@@ -642,10 +642,6 @@ module zoom_image_v1 #(
     rd_addr1 <= rd_addr;
     rd_addr2 <= rd_addr;
     rd_addr3 <= rd_addr;
-    //	rd_addr0  <= image_w1[FRA_WIDTH+:IMAGE_SIZE];// rd_addr valid ->delay = 3 
-    //	rd_addr1  <= image_w1[FRA_WIDTH+:IMAGE_SIZE];
-    //	rd_addr2  <= image_w1[FRA_WIDTH+:IMAGE_SIZE];
-    //	rd_addr3  <= image_w1[FRA_WIDTH+:IMAGE_SIZE];
 
   end
   reg [1:0] ram_ch0;
@@ -719,15 +715,14 @@ module zoom_image_v1 #(
   always @(posedge clk) begin
     coe_valid <= {coe_valid[5:0], {((zoom_sta == ZOOM || zoom_sta == BLANK)) ? 1'b1 : 1'b0}};
     if (coe_valid[3]) begin
-      if ((image_w2[IMAGE_SIZE+FRA_WIDTH+3-1] == 1'b1) || (image_w2 >= (IMAGE_W) * FRA_WIDTH_power))
+      if ((image_w2[IMAGE_SIZE+FRA_WIDTH+3-1] == 1'b1) || (image_w2 >= (IMAGE_W) * FraWidthPower))
         image_w_valid <= 2'b01;
       else image_w_valid <= 2'b10;
       if ((image_h2[IMAGE_SIZE+FRA_WIDTH+3-1] == 1'b1) ||
-          (image_h2 >= (IMAGE_H - 1) * FRA_WIDTH_power))
+          (image_h2 >= (IMAGE_H - 1) * FraWidthPower))
         image_h_valid <= 2'b01;
       else image_h_valid <= 2'b10;
-      if ((image_h2 >= (IMAGE_H / 2) * FRA_WIDTH_power) &
-          (image_w2 >= (IMAGE_W / 2) * FRA_WIDTH_power))
+      if ((image_h2 >= (IMAGE_H / 2) * FraWidthPower) & (image_w2 >= (IMAGE_W / 2) * FraWidthPower))
         image_blank_valid <= 'b1;
       else image_blank_valid <= 'b0;
     end else begin
@@ -735,13 +730,13 @@ module zoom_image_v1 #(
       image_w_valid <= 'd0;
       image_blank_valid <= 'd0;
     end
-    coe0 <= FRA_WIDTH_power - image_w2_coe1;  // image_w2_coe ->delay =  5
-    coe2 <= FRA_WIDTH_power - image_w2_coe1;
-    coe1 <= FRA_WIDTH_power - image_h2_coe1;
+    coe0 <= FraWidthPower - image_w2_coe1;  // image_w2_coe ->delay =  5
+    coe2 <= FraWidthPower - image_w2_coe1;
+    coe1 <= FraWidthPower - image_h2_coe1;
     coe3 <= image_h2_coe1;
     coe0_0 <= image_w2_coe1;  // image_w2_coe ->delay =  5
     coe2_0 <= image_w2_coe1;
-    coe1_0 <= FRA_WIDTH_power - image_h2_coe1;
+    coe1_0 <= FraWidthPower - image_h2_coe1;
     coe3_0 <= image_h2_coe1;
     image_w2_coe0 <= image_w2_coe;
     image_w2_coe1 <= image_w2_coe0;

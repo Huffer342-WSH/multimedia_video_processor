@@ -7,19 +7,19 @@ module image_filiter #(
     parameter integer B_DATA_WIDTH = 5,
     parameter integer TH = 5
 ) (
-    input  clk,
-    input  resetn,
+    input clk,  //! 时钟
+    input resetn,  //! 复位
     //! FIFO初始化忙信号
     output rst_busy,
 
     //！ 滤波模式 0:不做处理 1:高斯滤波  2:中值滤波  3:自适应滤波
-    input  [                 2:0] mode,
-    //! 输入像素点
-    input  [PIXEL_DATA_WIDTH-1:0] s_pixel_data,
-    input                         s_pixel_valid,
-    //! 输出像素点
-    output [PIXEL_DATA_WIDTH-1:0] m_filtered_data,
-    output                        m_filtered_valid
+    input [2:0] mode,  //! 滤波模式
+
+    input [PIXEL_DATA_WIDTH-1:0] s_pixel_data,  //! 输入像素点
+    input                        s_pixel_valid, //! 输入像素点有效信号
+
+    output [PIXEL_DATA_WIDTH-1:0] m_filtered_data,  //! 输出像素点
+    output                        m_filtered_valid  //! 输出像素点有效信号
 );
 
   wire [3*PIXEL_DATA_WIDTH-1:0] multiline_pixel_data;

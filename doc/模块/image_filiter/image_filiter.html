@@ -1,0 +1,1259 @@
+
+<!-- saved from url=(0120)file:///D:/Project/FPGA_Project/Pango/multimedia_video_processor/doc/%E6%A8%A1%E5%9D%97/image_filiter/image_filiter.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+.hljs {
+  color: #383a42;
+  background: #fafafa;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #a0a1a7;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #a626a4;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e45649;
+}
+
+.hljs-literal {
+  color: #0184bb;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string {
+  color: #50a14f;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #986801;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #4078f2;
+}
+
+.hljs-built_in,
+.hljs-title.class_,
+.hljs-class .hljs-title {
+  color: #c18401;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+#descriptions{
+  margin-left:5.5%;
+  margin-right:3%;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #24292e;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: initial;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: initial;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr:after,
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body table {
+  width:100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body th {
+    background-color: #ffd78c;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.markdown-body :checked+.radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #0366d6;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-top: 8px!important;
+  margin-bottom: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-top: 8px!important;
+  padding-bottom: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  color: #fafbfc;
+  background-color: #b31d28;
+}
+
+.markdown-body .pl-c2 {
+  color: #fafbfc;
+  background-color: #d73a49;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  font-weight: 700;
+  color: #22863a;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  font-weight: 700;
+  color: #005cc5;
+}
+
+.markdown-body .pl-mi {
+  font-style: italic;
+  color: #24292e;
+}
+
+.markdown-body .pl-mb {
+  font-weight: 700;
+  color: #24292e;
+}
+
+.markdown-body .pl-md {
+  color: #b31d28;
+  background-color: #ffeef0;
+}
+
+.markdown-body .pl-mi1 {
+  color: #22863a;
+  background-color: #f0fff4;
+}
+
+.markdown-body .pl-mc {
+  color: #e36209;
+  background-color: #ffebda;
+}
+
+.markdown-body .pl-mi2 {
+  color: #f6f8fa;
+  background-color: #005cc5;
+}
+
+.markdown-body .pl-mdr {
+  font-weight: 700;
+  color: #6f42c1;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  text-decoration: underline;
+  color: #032f62;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+}
+
+.markdown-body .my-2 {
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-top: 8px!important;
+  padding-bottom: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+.markdown-body:after,
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  clear: both;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body details,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  width:100%;
+
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+.markdown-body blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: .25em solid #dfe2e5;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  padding-bottom: .3em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  font-size: .85em;
+  color: #6a737d;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body table {
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: initial;
+  background-color: #fff;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: initial;
+  border: 0;
+}
+
+.markdown-body .commit-tease-sha {
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 90%;
+  color: #444d56;
+}
+
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+
+.markdown-body .blob-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  width: 1%;
+  min-width: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(27,31,35,.3);
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  overflow: visible;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+  color: #24292e;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  cursor: pointer;
+  background: #ffea7f;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+.markdown-body .description {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+</style>
+  
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>TerosHDL</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+  </style>
+  <link rel="stylesheet" href="chrome-extension://mhnlakgilnojmhinhkckjpncpbhabphi/content.css"><style id="_goober"> .go1475592160{height:0;}.go1671063245{height:auto;}.go1888806478{display:flex;flex-wrap:wrap;flex-grow:1;}@media (min-width:600px){.go1888806478{flex-grow:initial;min-width:288px;}}.go167266335{background-color:#313131;font-size:0.875rem;line-height:1.43;letter-spacing:0.01071em;color:#fff;align-items:center;padding:6px 16px;border-radius:4px;box-shadow:0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);}.go3162094071{padding-left:20px;}.go3844575157{background-color:#313131;}.go1725278324{background-color:#43a047;}.go3651055292{background-color:#d32f2f;}.go4215275574{background-color:#ff9800;}.go1930647212{background-color:#2196f3;}.go946087465{display:flex;align-items:center;padding:8px 0;}.go703367398{display:flex;align-items:center;margin-left:auto;padding-left:16px;margin-right:-8px;}.go3963613292{width:100%;position:relative;transform:translateX(0);top:0;right:0;bottom:0;left:0;min-width:288px;}.go1141946668{box-sizing:border-box;display:flex;max-height:100%;position:fixed;z-index:1400;height:auto;width:auto;transition:top 300ms ease 0ms,right 300ms ease 0ms,bottom 300ms ease 0ms,left 300ms ease 0ms,max-width 300ms ease 0ms;pointer-events:none;max-width:calc(100% - 40px);}.go1141946668 .notistack-CollapseWrapper{padding:6px 0px;transition:padding 300ms ease 0ms;}@media (max-width:599.95px){.go1141946668{width:100%;max-width:calc(100% - 32px);}}.go3868796639 .notistack-CollapseWrapper{padding:2px 0px;}.go3118922589{top:14px;flex-direction:column;}.go1453831412{bottom:14px;flex-direction:column-reverse;}.go4027089540{left:20px;}@media (min-width:600px){.go4027089540{align-items:flex-start;}}@media (max-width:599.95px){.go4027089540{left:16px;}}.go2989568495{right:20px;}@media (min-width:600px){.go2989568495{align-items:flex-end;}}@media (max-width:599.95px){.go2989568495{right:16px;}}.go4034260886{left:50%;transform:translateX(-50%);}@media (min-width:600px){.go4034260886{align-items:center;}}</style></head>
+  <body>
+  <article class="markdown-body">
+
+<div id="teroshdl" class="templateTerosHDL">
+<h1 id="entity-image_filiter">Entity: image_filiter</h1><ul>
+<li><strong>File</strong>: image_filiter.v</li>
+</ul><h2 id="diagram">Diagram</h2><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0 915 270"><svg id="SvgjsSvg1002" width="2" height="0" focusable="false" style="overflow:hidden;top:-100%;left:-100%;position:absolute;opacity:0"><polyline id="SvgjsPolyline1003" points="265,0 280,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg><rect id="SvgjsRect1006" width="370" height="150" fill="black" x="280" y="0"></rect><rect id="SvgjsRect1007" width="366" height="145" fill="#ffffff" x="282" y="2"></rect><text id="SvgjsText1008" font-family="Helvetica" x="260" y="-5.698437500000001" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1009" dy="26" x="260" svgjs:data="{&quot;newLined&quot;:true}">   reg [10:0] </tspan></text><text id="SvgjsText1010" font-family="Helvetica" x="295" y="-5.698437500000001" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1011" dy="26" x="295" svgjs:data="{&quot;newLined&quot;:true}">   IMAGE_WIDTH </tspan></text><line id="SvgjsLine1012" x1="265" y1="15" x2="280" y2="15" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1013" font-family="Helvetica" x="260" y="14.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1014" dy="26" x="260" svgjs:data="{&quot;newLined&quot;:true}">   reg [10:0] </tspan></text><text id="SvgjsText1015" font-family="Helvetica" x="295" y="14.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1016" dy="26" x="295" svgjs:data="{&quot;newLined&quot;:true}">   IMAGE_HEIGHT </tspan></text><line id="SvgjsLine1017" x1="265" y1="35" x2="280" y2="35" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1018" font-family="Helvetica" x="260" y="34.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1019" dy="26" x="260" svgjs:data="{&quot;newLined&quot;:true}">   integer </tspan></text><text id="SvgjsText1020" font-family="Helvetica" x="295" y="34.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1021" dy="26" x="295" svgjs:data="{&quot;newLined&quot;:true}">   PIXEL_DATA_WIDTH </tspan></text><line id="SvgjsLine1022" x1="265" y1="55" x2="280" y2="55" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1023" font-family="Helvetica" x="260" y="54.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1024" dy="26" x="260" svgjs:data="{&quot;newLined&quot;:true}">   integer </tspan></text><text id="SvgjsText1025" font-family="Helvetica" x="295" y="54.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1026" dy="26" x="295" svgjs:data="{&quot;newLined&quot;:true}">   R_DATA_WIDTH </tspan></text><line id="SvgjsLine1027" x1="265" y1="75" x2="280" y2="75" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1028" font-family="Helvetica" x="260" y="74.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1029" dy="26" x="260" svgjs:data="{&quot;newLined&quot;:true}">   integer </tspan></text><text id="SvgjsText1030" font-family="Helvetica" x="295" y="74.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1031" dy="26" x="295" svgjs:data="{&quot;newLined&quot;:true}">   G_DATA_WIDTH </tspan></text><line id="SvgjsLine1032" x1="265" y1="95" x2="280" y2="95" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1033" font-family="Helvetica" x="260" y="94.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1034" dy="26" x="260" svgjs:data="{&quot;newLined&quot;:true}">   integer </tspan></text><text id="SvgjsText1035" font-family="Helvetica" x="295" y="94.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1036" dy="26" x="295" svgjs:data="{&quot;newLined&quot;:true}">   B_DATA_WIDTH </tspan></text><line id="SvgjsLine1037" x1="265" y1="115" x2="280" y2="115" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1038" font-family="Helvetica" x="260" y="114.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1039" dy="26" x="260" svgjs:data="{&quot;newLined&quot;:true}">   integer </tspan></text><text id="SvgjsText1040" font-family="Helvetica" x="295" y="114.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1041" dy="26" x="295" svgjs:data="{&quot;newLined&quot;:true}">   TH </tspan></text><line id="SvgjsLine1042" x1="265" y1="135" x2="280" y2="135" stroke-linecap="rec" stroke="black" stroke-width="5"></line><rect id="SvgjsRect1043" width="370" height="110" fill="black" x="280" y="155"></rect><rect id="SvgjsRect1044" width="366" height="105" fill="#ffffff" x="282" y="157"></rect><text id="SvgjsText1045" font-family="Helvetica" x="260" y="149.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1046" dy="26" x="260" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1047" font-family="Helvetica" x="295" y="149.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1048" dy="26" x="295" svgjs:data="{&quot;newLined&quot;:true}">   clk </tspan></text><line id="SvgjsLine1049" x1="265" y1="170" x2="280" y2="170" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1050" font-family="Helvetica" x="260" y="169.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1051" dy="26" x="260" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1052" font-family="Helvetica" x="295" y="169.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1053" dy="26" x="295" svgjs:data="{&quot;newLined&quot;:true}">   resetn </tspan></text><line id="SvgjsLine1054" x1="265" y1="190" x2="280" y2="190" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1055" font-family="Helvetica" x="260" y="189.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1056" dy="26" x="260" svgjs:data="{&quot;newLined&quot;:true}">   [2:0] </tspan></text><text id="SvgjsText1057" font-family="Helvetica" x="295" y="189.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1058" dy="26" x="295" svgjs:data="{&quot;newLined&quot;:true}">   mode </tspan></text><line id="SvgjsLine1059" x1="265" y1="210" x2="280" y2="210" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1060" font-family="Helvetica" x="260" y="209.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1061" dy="26" x="260" svgjs:data="{&quot;newLined&quot;:true}">   [PIXEL_DATA_WIDTH-1:0] </tspan></text><text id="SvgjsText1062" font-family="Helvetica" x="295" y="209.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1063" dy="26" x="295" svgjs:data="{&quot;newLined&quot;:true}">   s_pixel_data </tspan></text><line id="SvgjsLine1064" x1="265" y1="230" x2="280" y2="230" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1065" font-family="Helvetica" x="260" y="229.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1066" dy="26" x="260" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1067" font-family="Helvetica" x="295" y="229.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1068" dy="26" x="295" svgjs:data="{&quot;newLined&quot;:true}">   s_pixel_valid </tspan></text><line id="SvgjsLine1069" x1="265" y1="250" x2="280" y2="250" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1070" font-family="Helvetica" x="670" y="149.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1071" dy="26" x="670" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1072" font-family="Helvetica" x="635" y="149.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1073" dy="26" x="635" svgjs:data="{&quot;newLined&quot;:true}">   rst_busy </tspan></text><line id="SvgjsLine1074" x1="650" y1="170" x2="665" y2="170" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1075" font-family="Helvetica" x="670" y="169.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1076" dy="26" x="670" svgjs:data="{&quot;newLined&quot;:true}">   [PIXEL_DATA_WIDTH-1:0] </tspan></text><text id="SvgjsText1077" font-family="Helvetica" x="635" y="169.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1078" dy="26" x="635" svgjs:data="{&quot;newLined&quot;:true}">   m_filtered_data </tspan></text><line id="SvgjsLine1079" x1="650" y1="190" x2="665" y2="190" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1080" font-family="Helvetica" x="670" y="189.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1081" dy="26" x="670" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1082" font-family="Helvetica" x="635" y="189.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1083" dy="26" x="635" svgjs:data="{&quot;newLined&quot;:true}">   m_filtered_valid </tspan></text><line id="SvgjsLine1084" x1="650" y1="210" x2="665" y2="210" stroke-linecap="rec" stroke="black" stroke-width="5"></line></svg>
+<h2 id="generics">Generics</h2>
+<table>
+<thead>
+<tr>
+<th id="generic_name">Generic name</th>
+<th id="type">Type</th>
+<th id="value">Value</th>
+<th id="description">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IMAGE_WIDTH</td>
+<td>reg [10:0]</td>
+<td>1280</td>
+<td></td>
+</tr>
+<tr>
+<td>IMAGE_HEIGHT</td>
+<td>reg [10:0]</td>
+<td>360</td>
+<td></td>
+</tr>
+<tr>
+<td>PIXEL_DATA_WIDTH</td>
+<td>integer</td>
+<td>16</td>
+<td></td>
+</tr>
+<tr>
+<td>R_DATA_WIDTH</td>
+<td>integer</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>G_DATA_WIDTH</td>
+<td>integer</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td>B_DATA_WIDTH</td>
+<td>integer</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>TH</td>
+<td>integer</td>
+<td>5</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ports">Ports</h2>
+<table>
+<thead>
+<tr>
+<th id="port_name">Port name</th>
+<th id="direction">Direction</th>
+<th id="type">Type</th>
+<th id="description">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>clk</td>
+<td>input</td>
+<td></td>
+<td>时钟</td>
+</tr>
+<tr>
+<td>resetn</td>
+<td>input</td>
+<td></td>
+<td>复位</td>
+</tr>
+<tr>
+<td>rst_busy</td>
+<td>output</td>
+<td></td>
+<td>FIFO初始化忙信号</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>input</td>
+<td>[2:0]</td>
+<td>滤波模式</td>
+</tr>
+<tr>
+<td>s_pixel_data</td>
+<td>input</td>
+<td>[PIXEL_DATA_WIDTH-1:0]</td>
+<td>输入像素点</td>
+</tr>
+<tr>
+<td>s_pixel_valid</td>
+<td>input</td>
+<td></td>
+<td>输入像素点有效信号</td>
+</tr>
+<tr>
+<td>m_filtered_data</td>
+<td>output</td>
+<td>[PIXEL_DATA_WIDTH-1:0]</td>
+<td>输出像素点</td>
+</tr>
+<tr>
+<td>m_filtered_valid</td>
+<td>output</td>
+<td></td>
+<td>输出像素点有效信号</td>
+</tr>
+</tbody>
+</table><h2 id="signals">Signals</h2>
+<table>
+<thead>
+<tr>
+<th id="name">Name</th>
+<th id="type">Type</th>
+<th id="description">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>multiline_pixel_data</td>
+<td>wire [3*PIXEL_DATA_WIDTH-1:0]</td>
+<td></td>
+</tr>
+<tr>
+<td>pixel_valid</td>
+<td>wire</td>
+<td></td>
+</tr>
+<tr>
+<td>matrix_data</td>
+<td>wire [9*PIXEL_DATA_WIDTH-1:0]</td>
+<td>3x3像素点矩阵</td>
+</tr>
+<tr>
+<td>matrix_valid</td>
+<td>wire</td>
+<td>3x3像素点矩阵有效信号</td>
+</tr>
+</tbody>
+</table><h2 id="instantiations">Instantiations</h2><ul>
+<li>multiline_buffer_inst: multiline_buffer</li>
+</ul><ul>
+<li>vector_to_matrix_inst: vector_to_matrix</li>
+</ul><div id="descriptions"><p><strong>Description</strong><br>
+  输入三行数据流，输出3x3矩阵</p></div><ul>
+<li>hybrid_filter_inst: hybrid_filter</li>
+</ul><div id="descriptions"><p><strong>Description</strong><br>
+  对矩阵滤波</p></div>
+        <br><br><br><br><br><br>
+    </div></article>
+    
+    <use-chat-gpt-ai-content-menu id="USE_CHAT_GPT_AI_ROOT_Context_Menu"><template shadowrootmode="open"><div id="USE_CHAT_GPT_AI_ROOT_Context_Menu_Portal"><div tabindex="-1" id="USE_CHAT_GPT_AI_ROOT_Floating_Reference_Element" aria-hidden="true" style="position: absolute; z-index: -1; opacity: 0; top: 0px; left: 0px; width: 418px; max-width: 90vw;"><div class="RootMenu" aria-expanded="false" aria-haspopup="menu" id=":r7:" style="box-sizing: border-box; border: 1px solid rgb(237, 237, 236); background: rgb(255, 255, 255); border-radius: 6px; box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px; overflow: hidden; isolation: isolate; display: flex; flex-direction: column; width: 100%; padding: 7px 12px;"><div class="chat-message--text max-ai__writing-message-box use-chat-gpt-ai-context-menu-1amg59s" style="min-height: 1px;"><div tabindex="-1" class="markdown-body " style="text-align: left;"></div></div><div class="use-chat-gpt-ai-context-menu-2lxj3h"><div class="use-chat-gpt-ai--MuiBox-root use-chat-gpt-ai-context-menu-21i12g"><svg class="use-chat-gpt-ai--MuiSvgIcon-root use-chat-gpt-ai--MuiSvgIcon-fontSizeMedium use-chat-gpt-ai-context-menu-78c7p2" focusable="false" aria-hidden="true" viewBox="0 0 24 24"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1_2)"><path d="M11.4464 16.1294L10.489 18.3223C10.121 19.1652 8.95452 19.1652 8.5865 18.3223L7.62905 16.1294C6.77701 14.1779 5.24338 12.6245 3.33038 11.7754L0.695048 10.6056C-0.142816 10.2337 -0.142815 9.01477 0.695048 8.64286L3.24807 7.50959C5.21027 6.63859 6.77141 5.02764 7.6089 3.00957L8.57874 0.672646C8.93863 -0.194591 10.1369 -0.194593 10.4968 0.672643L11.4666 3.00959C12.3041 5.02764 13.8652 6.63859 15.8274 7.50959L18.3805 8.64286C19.2183 9.01477 19.2183 10.2337 18.3805 10.6056L15.7451 11.7754C13.8321 12.6245 12.2985 14.1779 11.4464 16.1294Z" fill="url(#paint0_radial_1_2)"></path><path d="M20.3441 23.044L20.0748 23.6611C19.8778 24.1129 19.2522 24.1129 19.0552 23.6611L18.7859 23.044C18.3059 21.9437 17.4414 21.0676 16.3626 20.5883L15.5331 20.2198C15.0845 20.0205 15.0845 19.3684 15.5331 19.1691L16.3163 18.8211C17.4228 18.3295 18.3028 17.421 18.7745 16.2833L19.051 15.6165C19.2437 15.1517 19.8863 15.1517 20.079 15.6165L20.3555 16.2833C20.8273 17.421 21.7073 18.3295 22.8138 18.8211L23.5969 19.1691C24.0456 19.3684 24.0456 20.0205 23.5969 20.2198L22.7674 20.5883C21.6886 21.0676 20.8241 21.9437 20.3441 23.044Z" fill="url(#paint1_radial_1_2)"></path></g><defs><radialgradient id="paint0_radial_1_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(14.8988 10.5335) rotate(78.858) scale(14.7889 14.7961)"><stop stop-color="#1BA1E3"></stop><stop offset="0.0001" stop-color="#1BA1E3"></stop><stop offset="0.300221" stop-color="#5489D6"></stop><stop offset="0.545524" stop-color="#9B72CB"></stop><stop offset="0.825372" stop-color="#D96570"></stop><stop offset="1" stop-color="#F49C46"></stop></radialgradient><radialgradient id="paint1_radial_1_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(14.8988 10.5335) rotate(78.858) scale(14.7889 14.7961)"><stop stop-color="#1BA1E3"></stop><stop offset="0.0001" stop-color="#1BA1E3"></stop><stop offset="0.300221" stop-color="#5489D6"></stop><stop offset="0.545524" stop-color="#9B72CB"></stop><stop offset="0.825372" stop-color="#D96570"></stop><stop offset="1" stop-color="#F49C46"></stop></radialgradient><clippath id="clip0_1_2"><rect width="24" height="24" fill="white"></rect></clippath></defs></svg></svg></div><div class="use-chat-gpt-ai-context-menu-1ibbfzg"><div class="use-chat-gpt-ai--MuiBox-root use-chat-gpt-ai-context-menu-slsi5q" style="height: 24px;"><div class="chat-box__input-skeleton use-chat-gpt-ai--MuiBox-root use-chat-gpt-ai-context-menu-0"><span class="use-chat-gpt-ai--MuiSkeleton-root use-chat-gpt-ai--MuiSkeleton-text use-chat-gpt-ai--MuiSkeleton-pulse use-chat-gpt-ai-context-menu-z7erpk" style="height: 24px;"></span></div><div class="use-chat-gpt-ai-context-menu-1i4n3ds"><div class="max-ai-user-input__expand use-chat-gpt-ai-context-menu-1v8k3sq"></div><textarea id="USE_CHAT_GPT_AI_ROOT_Floating_Input" placeholder="" rows="1" style="height: 24px;"></textarea></div><div class="use-chat-gpt-ai-context-menu-1ofqig9"></div></div><button class="use-chat-gpt-ai--MuiButtonBase-root use-chat-gpt-ai--MuiIconButton-root use-chat-gpt-ai--MuiIconButton-sizeMedium use-chat-gpt-ai-context-menu-nwgrxu" tabindex="0" type="button"><svg class="use-chat-gpt-ai--MuiSvgIcon-root use-chat-gpt-ai--MuiSvgIcon-fontSizeMedium use-chat-gpt-ai-context-menu-1vtxfov" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SendIcon"><path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"></path></svg><span class="use-chat-gpt-ai--MuiTouchRipple-root use-chat-gpt-ai-context-menu-w0pj6f"></span></button><div class="MenuItem use-chat-gpt-ai--MuiBox-root use-chat-gpt-ai-context-menu-1fuqp3k" role="menuitem" aria-expanded="false" aria-haspopup="menu" id=":rg:"><button class="use-chat-gpt-ai--MuiButtonBase-root use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeSmall use-chat-gpt-ai--MuiButton-textSizeSmall use-chat-gpt-ai--MuiButton-disableElevation use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeSmall use-chat-gpt-ai--MuiButton-textSizeSmall use-chat-gpt-ai--MuiButton-disableElevation use-chat-gpt-ai-context-menu-12eyldl" tabindex="0" type="button"><svg class="use-chat-gpt-ai--MuiSvgIcon-root use-chat-gpt-ai--MuiSvgIcon-fontSizeMedium use-chat-gpt-ai-context-menu-1vts0be" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MoreHorizIcon"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg><span class="use-chat-gpt-ai--MuiTouchRipple-root use-chat-gpt-ai-context-menu-w0pj6f"></span></button></div><button class="use-chat-gpt-ai--MuiButtonBase-root use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeMedium use-chat-gpt-ai--MuiButton-textSizeMedium use-chat-gpt-ai--MuiButton-disableElevation use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeMedium use-chat-gpt-ai--MuiButton-textSizeMedium use-chat-gpt-ai--MuiButton-disableElevation max-ai__actions__button--toggle-sidebar use-chat-gpt-ai-context-menu-99sh6g" tabindex="0" type="button"><svg class="use-chat-gpt-ai--MuiSvgIcon-root use-chat-gpt-ai--MuiSvgIcon-fontSizeMedium use-chat-gpt-ai-context-menu-1vts0be" focusable="false" aria-hidden="true" viewBox="0 0 24 24"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><mask maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><rect width="24" height="24" fill="black"></rect></mask><g mask="url(#mask0_2797_41925)"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 3H3V21H21V3ZM14.5 5.5H5.5V18.5H14.5V5.5Z" fill="currentColor"></path></g></svg></svg><span class="use-chat-gpt-ai--MuiTouchRipple-root use-chat-gpt-ai-context-menu-w0pj6f"></span></button></div></div></div></div><div class="use-chat-gpt-ai--MuiPaper-root use-chat-gpt-ai--MuiPaper-elevation use-chat-gpt-ai--MuiPaper-rounded use-chat-gpt-ai--MuiPaper-elevation3 max-ai__click-context-menu close use-chat-gpt-ai-context-menu-rjbnjz"><div class="use-chat-gpt-ai-context-menu-30jfr7"><div class="max-ai__click-menu-button--box use-chat-gpt-ai--MuiBox-root use-chat-gpt-ai-context-menu-0"><div sx="[object Object]" class=""><button class="use-chat-gpt-ai--MuiButtonBase-root use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeSmall use-chat-gpt-ai--MuiButton-textSizeSmall use-chat-gpt-ai--MuiButton-disableElevation use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeSmall use-chat-gpt-ai--MuiButton-textSizeSmall use-chat-gpt-ai--MuiButton-disableElevation usechatgpt-ai__context-menu--handle-button use-chat-gpt-ai-context-menu-13z1kgn" tabindex="0" type="button" id="max_ai__floating_context_menu__cta_button"><svg class="use-chat-gpt-ai--MuiSvgIcon-root use-chat-gpt-ai--MuiSvgIcon-fontSizeMedium use-chat-gpt-ai-context-menu-5h6i5u" focusable="false" aria-hidden="true" viewBox="0 0 24 24"><svg width="24" height="24" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 16L33.5 10.5L28 8L33.5 5.5L36 0L38.5 5.5L44 8L38.5 10.5L36 16ZM36 44L33.5 38.5L28 36L33.5 33.5L36 28L38.5 33.5L44 36L38.5 38.5L36 44ZM16 38L11 27L0 22L11 17L16 6L21 17L32 22L21 27L16 38Z" fill="currentColor"></path></svg></svg><span class="use-chat-gpt-ai--MuiTouchRipple-root use-chat-gpt-ai-context-menu-w0pj6f"></span></button></div></div><div class="max-ai__click-menu-button--box use-chat-gpt-ai-context-menu-5v6bmi"><div class=""><button class="use-chat-gpt-ai--MuiButtonBase-root use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeMedium use-chat-gpt-ai--MuiButton-textSizeMedium use-chat-gpt-ai--MuiButton-disableElevation use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeMedium use-chat-gpt-ai--MuiButton-textSizeMedium use-chat-gpt-ai--MuiButton-disableElevation use-chat-gpt-ai-context-menu-1ygebg" tabindex="0" type="button"><svg class="use-chat-gpt-ai--MuiSvgIcon-root use-chat-gpt-ai--MuiSvgIcon-fontSizeMedium use-chat-gpt-ai-context-menu-2cuxj8" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg><span class="use-chat-gpt-ai--MuiTouchRipple-root use-chat-gpt-ai-context-menu-w0pj6f"></span></button></div></div><div class="max-ai__click-menu-button--box use-chat-gpt-ai-context-menu-5v6bmi"></div><div class="RootMenu use-chat-gpt-ai--MuiBox-root use-chat-gpt-ai-context-menu-458pxz" aria-expanded="false" aria-haspopup="menu" id=":rk:"><button class="use-chat-gpt-ai--MuiButtonBase-root use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeSmall use-chat-gpt-ai--MuiButton-textSizeSmall use-chat-gpt-ai--MuiButton-disableElevation use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeSmall use-chat-gpt-ai--MuiButton-textSizeSmall use-chat-gpt-ai--MuiButton-disableElevation use-chat-gpt-ai-context-menu-1xqc0bk" tabindex="0" type="button"><svg class="use-chat-gpt-ai--MuiSvgIcon-root use-chat-gpt-ai--MuiSvgIcon-fontSizeMedium use-chat-gpt-ai-context-menu-2cuxj8" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MoreHorizIcon"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg><span class="use-chat-gpt-ai--MuiTouchRipple-root use-chat-gpt-ai-context-menu-w0pj6f"></span></button><button class="use-chat-gpt-ai--MuiButtonBase-root use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeSmall use-chat-gpt-ai--MuiButton-textSizeSmall use-chat-gpt-ai--MuiButton-disableElevation use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeSmall use-chat-gpt-ai--MuiButton-textSizeSmall use-chat-gpt-ai--MuiButton-disableElevation use-chat-gpt-ai-context-menu-1q06b3d" tabindex="0" type="button"><svg class="use-chat-gpt-ai--MuiSvgIcon-root use-chat-gpt-ai--MuiSvgIcon-fontSizeMedium use-chat-gpt-ai-context-menu-69fzer" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MoreHorizIcon"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg><span class="use-chat-gpt-ai--MuiTouchRipple-root use-chat-gpt-ai-context-menu-w0pj6f"></span></button></div></div></div></div><style><style data-emotion="use-chat-gpt-ai-context-menu" data-s=""></style></style><link rel="stylesheet" href="chrome-extension://mhnlakgilnojmhinhkckjpncpbhabphi/content_style.css"></template></use-chat-gpt-ai-content-menu><use-chat-gpt-ai id="USE_CHAT_GPT_AI_ROOT" data-version="2.2.9" style="display: none;"><template shadowrootmode="open"><style><style data-emotion="use-chat-gpt-ai-emotion-cache" data-s=""></style></style><div id="USE_CHAT_GPT_AI_ROOT_Wrapper" style="display: flex; flex-direction: column; flex: 1 1 0%; height: 100vh;"><div style="position: relative; user-select: auto; width: 1052px; height: 100%; max-width: 1052px; min-width: 450px; box-sizing: border-box; flex-shrink: 0;"><div class="use-chat-gpt-ai-app use-chat-gpt-ai--MuiBox-root use-chat-gpt-ai-emotion-cache-11tnanq"><div class="use-chat-gpt-ai-emotion-cache-1pfvbtm"><div class="use-chat-gpt-ai-emotion-cache-72sbbk"><div class="use-chat-gpt-ai-emotion-cache-2dr2g8"><a class="use-chat-gpt-ai--MuiTypography-root use-chat-gpt-ai--MuiTypography-inherit use-chat-gpt-ai--MuiLink-root use-chat-gpt-ai--MuiLink-underlineAlways use-chat-gpt-ai-emotion-cache-1hemq66" href="https://app.maxai.me/" target="_blank"><div class="use-chat-gpt-ai-emotion-cache-m4dzlw"><svg class="use-chat-gpt-ai--MuiSvgIcon-root use-chat-gpt-ai--MuiSvgIcon-fontSizeMedium use-chat-gpt-ai-emotion-cache-1vd27xr" focusable="false" aria-hidden="true" viewBox="0 0 24 24"><svg width="24" height="24" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 16L33.5 10.5L28 8L33.5 5.5L36 0L38.5 5.5L44 8L38.5 10.5L36 16ZM36 44L33.5 38.5L28 36L33.5 33.5L36 28L38.5 33.5L44 36L38.5 38.5L36 44ZM16 38L11 27L0 22L11 17L16 6L21 17L32 22L21 27L16 38Z" fill="currentColor"></path></svg></svg><h1 class="use-chat-gpt-ai--MuiTypography-root use-chat-gpt-ai--MuiTypography-body1 use-chat-gpt-ai-emotion-cache-vvdef3">MaxAI.me</h1></div></a><a class="use-chat-gpt-ai--MuiTypography-root use-chat-gpt-ai--MuiTypography-inherit use-chat-gpt-ai--MuiLink-root use-chat-gpt-ai--MuiLink-underlineNone use-chat-gpt-ai-emotion-cache-1hx4ard" href="https://app.maxai.me/rewards" target="_blank"><div class="use-chat-gpt-ai-emotion-cache-1lfeijh"><svg class="use-chat-gpt-ai--MuiSvgIcon-root use-chat-gpt-ai--MuiSvgIcon-fontSizeMedium use-chat-gpt-ai-emotion-cache-1yls13q" focusable="false" aria-hidden="true" viewBox="0 0 24 24"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_7189_70803)"><mask id="mask0_7189_70803" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><path d="M24 0H0V24H24V0Z" fill="#D9D9D9"></path></mask><g mask="url(#mask0_7189_70803)"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.2529 2C16.8912 2 16.5597 2.11483 16.3012 2.23418C16.031 2.35894 15.762 2.52578 15.5058 2.70739C14.9934 3.07058 14.4479 3.55354 13.9259 4.06114C13.2473 4.7211 12.569 5.46163 11.9994 6.12079C11.4297 5.46163 10.7514 4.7211 10.0728 4.06114C9.55087 3.55354 9.0053 3.07058 8.49295 2.70739C8.23675 2.52578 7.96776 2.35894 7.69751 2.23418C7.43901 2.11483 7.10757 2 6.74582 2C5.58666 2 4.70267 2.64366 4.17036 3.40788C3.64984 4.15517 3.38502 5.12223 3.5119 6.01068L3.5177 6.05168C3.56656 6.39888 3.66698 7.11236 4.13721 7.71889C4.6842 8.42441 5.55743 8.79808 6.74582 8.79808H17.2529C18.4413 8.79808 19.3145 8.42441 19.8615 7.71889C20.3318 7.11236 20.4322 6.39888 20.481 6.05168L20.4868 6.01068C20.6137 5.12223 20.3489 4.15517 19.8284 3.40788C19.2961 2.64366 18.4121 2 17.2529 2ZM8.61505 5.56015C8.98897 5.92379 9.36587 6.31723 9.7229 6.70711H6.74582C6.01014 6.70711 5.83542 6.49668 5.78972 6.43773C5.68663 6.30476 5.63789 6.10736 5.58187 5.71508C5.53786 5.40688 5.63381 4.96524 5.88613 4.60299C6.11929 4.26826 6.40919 4.10135 6.71661 4.09143C6.73184 4.09592 6.76582 4.10709 6.82105 4.13259C6.93579 4.18557 7.09033 4.27615 7.28374 4.41325C7.6706 4.68748 8.12862 5.0871 8.61505 5.56015ZM14.2758 6.70711C14.6329 6.31723 15.0098 5.92379 15.3837 5.56015C15.8701 5.0871 16.3281 4.68748 16.715 4.41325C16.9084 4.27615 17.0629 4.18556 17.1777 4.13259C17.2329 4.10709 17.2669 4.09593 17.2821 4.09144C17.5895 4.10135 17.8795 4.26826 18.1126 4.60299C18.3649 4.96524 18.4609 5.40688 18.4169 5.71508C18.3609 6.10736 18.3121 6.30476 18.209 6.43773C18.1633 6.49668 17.9886 6.70711 17.2529 6.70711H14.2758Z" fill="currentColor"></path><path d="M3.8291 11.4021C3.8291 11.0722 4.09657 10.8047 4.42652 10.8047H10.3998C10.7298 10.8047 10.9973 11.0722 10.9973 11.4021V21.4018C10.9973 21.7317 10.7298 21.9992 10.3998 21.9992H4.42652C4.09657 21.9992 3.8291 21.7317 3.8291 21.4018V11.4021Z" fill="currentColor"></path><path d="M12.9775 11.4021C12.9775 11.0722 13.2449 10.8047 13.5749 10.8047H19.5497C19.8796 10.8047 20.1471 11.0722 20.1471 11.4021V21.4018C20.1471 21.7317 19.8796 21.9992 19.5497 21.9992H13.5749C13.2449 21.9992 12.9775 21.7317 12.9775 21.4018V11.4021Z" fill="currentColor"></path></g></g><defs><clippath id="clip0_7189_70803"><rect width="24" height="24" fill="white"></rect></clippath></defs></svg></svg><span>奖励</span></div></a></div><div class="use-chat-gpt-ai-emotion-cache-dkmwo9"><button class="use-chat-gpt-ai--MuiButtonBase-root use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeMedium use-chat-gpt-ai--MuiButton-textSizeMedium use-chat-gpt-ai--MuiButton-disableElevation use-chat-gpt-ai--MuiButton-root use-chat-gpt-ai--MuiButton-text use-chat-gpt-ai--MuiButton-textPrimary use-chat-gpt-ai--MuiButton-sizeMedium use-chat-gpt-ai--MuiButton-textSizeMedium use-chat-gpt-ai--MuiButton-disableElevation use-chat-gpt-ai-emotion-cache-94t94v" tabindex="0" type="button"><svg class="use-chat-gpt-ai--MuiSvgIcon-root use-chat-gpt-ai--MuiSvgIcon-fontSizeMedium use-chat-gpt-ai-emotion-cache-103cn7c" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FullscreenOutlinedIcon"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"></path></svg><span class="use-chat-gpt-ai--MuiTouchRipple-root use-chat-gpt-ai-emotion-cache-w0pj6f"></span></button><button class="use-chat-gpt-ai--MuiButtonBase-root use-chat-gpt-ai--MuiIconButton-root use-chat-gpt-ai--MuiIconButton-sizeMedium use-chat-gpt-ai-emotion-cache-1y63s7j" tabindex="0" type="button"><svg class="use-chat-gpt-ai--MuiSvgIcon-root use-chat-gpt-ai--MuiSvgIcon-fontSizeMedium use-chat-gpt-ai-emotion-cache-1t8mnmp" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SettingsOutlinedIcon"><path d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.09-.16-.26-.25-.44-.25-.06 0-.12.01-.17.03l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.06-.02-.12-.03-.18-.03-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.09.16.26.25.44.25.06 0 .12-.01.17-.03l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path></svg><span class="use-chat-gpt-ai--MuiTouchRipple-root use-chat-gpt-ai-emotion-cache-w0pj6f"></span></button><button class="use-chat-gpt-ai--MuiButtonBase-root use-chat-gpt-ai--MuiIconButton-root use-chat-gpt-ai--MuiIconButton-sizeMedium use-chat-gpt-ai-emotion-cache-1y63s7j" tabindex="0" type="button"><svg class="use-chat-gpt-ai--MuiSvgIcon-root use-chat-gpt-ai--MuiSvgIcon-fontSizeMedium use-chat-gpt-ai-emotion-cache-dwpknh" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg><span class="use-chat-gpt-ai--MuiTouchRipple-root use-chat-gpt-ai-emotion-cache-w0pj6f"></span></button></div></div></div></div><div><div class="" style="position: absolute; user-select: none; width: 10px; height: 100%; top: 0px; left: -5px; cursor: col-resize;"></div></div></div></div><link rel="stylesheet" href="chrome-extension://mhnlakgilnojmhinhkckjpncpbhabphi/content_style.css"></template></use-chat-gpt-ai><max-ai-minimum-app id="USE_CHAT_GPT_AI_ROOT_Minimize_Container" data-version="2.2.9"><template shadowrootmode="open"><style></style><div></div></template></max-ai-minimum-app></body></html>

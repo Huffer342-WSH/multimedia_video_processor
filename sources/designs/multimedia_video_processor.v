@@ -278,7 +278,7 @@ module multimedia_video_processor #(
   );
 
   assign ddr_clk  = clk_200m;
-  assign zoom_clk = clk_200m;
+  assign zoom_clk = clk_1080p60Hz;
 `ifdef RES_1080P
   assign pix_clk = clk_1080p60Hz;
 `else
@@ -629,6 +629,7 @@ module multimedia_video_processor #(
   //---------------------------------------------------------------
   // 旋转
   //---------------------------------------------------------------
+  wire [7:0] rotate_freq;
   rotate_image #(
       .IMAGE_SIZE(IMAGE_SIZE),
       .MIN_NUM   (IMAGE_W),
@@ -646,6 +647,7 @@ module multimedia_video_processor #(
       .rotate_en        (rotate_vs_out),
       .ddr_data_in_valid(rd3_data_valid),
       .ddr_data_in      (rd3_data),
+      .freq             (rotate_freq),
 
       .rd_ddr_addr_valid(rotate_image_addr_valid),
       .rd_ddr_addr      (rotate_image_addr),
@@ -1037,5 +1039,6 @@ module multimedia_video_processor #(
 
   always @(*) begin
     led[4:1] = index_param;
+    // led[8:1] = rotate_freq;
   end
 endmodule

@@ -26,21 +26,24 @@ module rotate_image #(
     parameter   IMAGE_W    = 1280 ,
     parameter   IMAGE_H    = 720
 ) (
-    input clk,
-    input rst,
+    input clk,  //! 时钟
+    input rst,  //! 复位
 
-    input [7:0] rotate_angle,
-    input [9:0] rotate_amplitude,
-    input rotate_en,
-    input wire signed [11:0] offsetX,
-    input wire signed [11:0] offsetY,
-    input ddr_data_in_valid,
-    input [15:0] ddr_data_in,
+    input [7:0] rotate_angle,  //! 旋转角度
+    input [9:0] rotate_amplitude,  //! 幅值
+    input wire signed [11:0] offsetX,  //! 位移X
+    input wire signed [11:0] offsetY,  //! 位移Y
+    input rotate_en,  //! 使能
 
-    output rd_ddr_addr_valid,
-    output [32-1:0] rd_ddr_addr,
-    output data_out_valid,
-    output [15:0] data_out
+    output reg [7:0] freq,
+    input ddr_data_in_valid,  //! 读取数据-有效
+    input [15:0] ddr_data_in,  //! 读取数据-数据
+
+    output rd_ddr_addr_valid,  //! 读取地址-有效
+    output [32-1:0] rd_ddr_addr,  //! 读取地址-数据
+    output data_out_valid,  //! 输出数据-有效
+    output [15:0] data_out  //! 输出数据-数据
+
 );
 
 
@@ -438,6 +441,37 @@ module rotate_image #(
         if (cnt_num == IMAGE_W) cnt_num <= 'd1;
         else cnt_num <= cnt_num + 1'b1;
       end else cnt_num <= cnt_num;
+    end
+  end
+
+  reg [ 7:0] frame_cnt;
+  reg [31:0] cnt_1s;
+  always @(posedge clk) begin
+    if (rst) begin
+      cnt_1s <= 0;
+      freq   <= 0;
+    end else begin
+      if (cnt_1s == 50000000) begin
+        cnt_1s <= 0;
+        freq   <= frame_cnt;
+      end else begin
+        cnt_1s <= cnt_1s + 1;
+        freq   <= freq;
+      end
+    end
+  end
+
+  always @(posedge clk) begin
+    if (rst) begin
+      frame_cnt <= 0;
+    end else begin
+      if (cnt_1s == 50000000) begin
+        frame_cnt <= 0;
+      end else if (rotate_sta == IDLE && rotate_en && addr_fifo_empty) begin
+        frame_cnt <= frame_cnt + 1;
+      end else begin
+        frame_cnt <= frame_cnt;
+      end
     end
   end
 endmodule

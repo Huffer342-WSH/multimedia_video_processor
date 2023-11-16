@@ -14,40 +14,40 @@ module eth_udp #(  //parameter define
     //输入数据IO延时,此处为0,即不延时(如果为n,表示延时n*78ps) 
     parameter IDELAY_VALUE = 0
 ) (
-    input        clk,         //系统时钟
-    input        resetn,      //系统复位信号，低电平有效 
+    input        clk,         //! 系统时钟
+    input        resetn,      //! 系统复位信号，低电平有效 
     //PL以太网RGMII接口   
-    input        eth_rxc,     //RGMII接收数据时钟
-    input        eth_rx_ctl,  //RGMII输入数据有效信号
-    input  [3:0] eth_rxd,     //RGMII输入数据
-    output       eth_txc,     //RGMII发送数据时钟    
-    output       eth_tx_ctl,  //RGMII输出数据有效信号
-    output [3:0] eth_txd,     //RGMII输出数据   
+    input        eth_rxc,     //! RGMII接收数据时钟
+    input        eth_rx_ctl,  //! RGMII输入数据有效信号
+    input  [3:0] eth_rxd,     //! RGMII输入数据
+    output       eth_txc,     //! RGMII发送数据时钟    
+    output       eth_tx_ctl,  //! RGMII输出数据有效信号
+    output [3:0] eth_txd,     //! RGMII输出数据   
 
 
     //原始接受数据 处于GMII接收时钟时钟域
-    output          gmii_clk,              //GMII接收时钟
-    output          udp_rx_pkt_start,
-    output          udp_rx_pkt_done,       //以太网单包数据接收完成信号
-    output          udp_rx_pkt_en,         //以太网接收的数据使能信号
-    output [ 7 : 0] udp_rx_pkt_data,       //以太网接收的数据
-    output [15 : 0] udp_rx_pkt_dest_port,  //以太网接收目的地端口
-    output [15 : 0] udp_rx_pkt_byte_num,   //以太网接收的有效字节数 单位:byte 
+    output          gmii_clk,              //! GMII接收时钟
+    output          udp_rx_pkt_start,      //! 以太网单包数据接收开始信号
+    output          udp_rx_pkt_done,       //! 以太网单包数据接收完成信号
+    output          udp_rx_pkt_en,         //! 以太网接收的数据使能信号
+    output [ 7 : 0] udp_rx_pkt_data,       //! 以太网接收的数据
+    output [15 : 0] udp_rx_pkt_dest_port,  //! 以太网接收目的地端口
+    output [15 : 0] udp_rx_pkt_byte_num,   //! 以太网接收的有效字节数 单位:byte 
 
 
-    output [ 7:0] udp_rx_m_data_tdata,     //待接受数据 数据
-    output        udp_rx_m_data_tlast,     //待接受数据 结束传输
-    output        udp_rx_m_data_tvalid,    //待接受数据 有效信号
-    input         udp_rx_m_data_tready,    //待接受数据 准备信号
-    output [15:0] udp_rx_m_data_tsize,     //待接受数据 数据量
-    output [ 5:0] udp_rx_m_cached_pkt_num, //待接受数据 已缓存数据包数量
+    output [ 7:0] udp_rx_m_data_tdata,     //! 待接受数据 数据
+    output        udp_rx_m_data_tlast,     //! 待接受数据 结束传输
+    output        udp_rx_m_data_tvalid,    //! 待接受数据 有效信号
+    input         udp_rx_m_data_tready,    //! 待接受数据 准备信号
+    output [15:0] udp_rx_m_data_tsize,     //! 待接受数据 数据量
+    output [ 5:0] udp_rx_m_cached_pkt_num, //! 待接受数据 已缓存数据包数量
 
 
-    input [ 7:0] udp_tx_s_data,   //待发送数据 数据
-    input        udp_tx_s_valid,  //待发送数据 有效信号
-    input        udp_tx_s_start,  //待发送数据 开始传输
-    input [15:0] udp_tx_s_tsize,  //待发送数据 数据量
-    input        udp_tx_s_last    //待发送数据 结束传输
+    input [ 7:0] udp_tx_s_data,   //! 待发送数据 数据
+    input        udp_tx_s_valid,  //! 待发送数据 有效信号
+    input        udp_tx_s_start,  //! 待发送数据 开始传输
+    input [15:0] udp_tx_s_tsize,  //! 待发送数据 数据量
+    input        udp_tx_s_last    //! 待发送数据 结束传输
 );
 
 

@@ -11,32 +11,56 @@
 module param_manager #(
     parameter integer CLK_FREQ = 50_000000
 ) (
+    //! 时钟
     input clk,
+    //! 复位
     input resetn,
 
+    //! 按键-左
     input akey_left,
+    //! 按键-右
     input akey_right,
+    //! 按键-上
     input akey_up,
+    //! 按键-下
     input akey_down,
+    //! 按键—恢复
     input akey_restore,
 
+    //! 带加载参数
     input [199:0] mem,
+    //! 参数变化标志
     input [ 24:0] mem_flags,
 
+    //! 参数序号
     output reg [3:0] index,
+    //! 滤波器1 模式
     output [2:0] filiter1_mode,
+    //! 滤波器2 模式
     output [2:0] filiter2_mode,
+    //! 双线性插值缩放系数
     output [9:0] zoom,
+    //! 旋转系数
     output [7:0] rotate,
+    //! OSD起始X坐标
     output [10:0] osd_startX,
+    //! OSD起始Y坐标
     output [10:0] osd_startY,
+    //! OSD字符宽度
     output [10:0] osd_char_width,
+    //! 文本行距
     output [10:0] osd_char_height,
+    //! 缩放系数2
     output [9:0] rotate_A,
+    //!  图像偏移X
     output wire signed [11:0] offsetX,
+    //! 图像偏移Y
     output wire signed [11:0] offsetY,
+    //! 色相偏移
     output wire signed [8:0] modify_H,
+    //! 饱和度偏移 
     output wire signed [8:0] modify_S,
+    //! 亮度偏移
     output wire signed [8:0] modify_V
 );
   localparam integer ParamNum = 14;
