@@ -159,3 +159,34 @@ dev_map
 pnr -fix_hold_violation 
 report_timing 
 gen_bit_stream 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -top_module multimedia_video_processor
+synthesize -ads -frequency {100} -selected_syn_tool_opt 2 
+dev_map 
+pnr -fix_hold_violation 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -top_module multimedia_video_processor
+synthesize -ads -frequency {100} -selected_syn_tool_opt 2 
+dev_map 
+pnr -fix_hold_violation 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -top_module multimedia_video_processor
+synthesize -ads -frequency {100} -selected_syn_tool_opt 2 
+dev_map 
+pnr -fix_hold_violation 
+report_timing 
+gen_bit_stream 
+report_timing 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -top_module multimedia_video_processor
+synthesize -ads -frequency {100} -selected_syn_tool_opt 2 
+dev_map 
+pnr -fix_hold_violation 
+report_timing 
+gen_bit_stream 
+gen_bit_stream 
+gen_bit_stream 

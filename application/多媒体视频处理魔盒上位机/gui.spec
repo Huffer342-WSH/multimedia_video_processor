@@ -15,7 +15,7 @@ a = Analysis(
 )
 pyz = PYZ(a.pure)
 splash = Splash(
-    'D:\\Project\\Python_Project\\多媒体视频处理魔盒上位机\\splash.png',
+    'D:/Project/Python_Project/多媒体视频处理魔盒上位机/splash.png',
     binaries=a.binaries,
     datas=a.datas,
     text_pos=None,

@@ -7,12 +7,12 @@ module char_buf_writer #(
     input clk,
     input resetn,
 
-    //输入接口，接UDP接受端口
-    input      [ 7:0] udp_rx_s_data_tdata,
-    input             udp_rx_s_data_tlast,
-    input             udp_rx_s_data_tvalid,
-    output reg        udp_rx_s_data_tready,
-    input      [15:0] udp_rx_s_data_tsize,
+    //! 输入接口，接UDP接受端口
+    input      [ 7:0] udp_rx_s_data_tdata,   //! UDP接受数据
+    input             udp_rx_s_data_tlast,   //! UDP接收数据的
+    input             udp_rx_s_data_tvalid,  //! 
+    output reg        udp_rx_s_data_tready,  //! 
+    input      [15:0] udp_rx_s_data_tsize,   //! 
 
     //ram接口
     output reg [CHAR_BUFFER_ADDR_WIDTH-1:0] ram_addr,

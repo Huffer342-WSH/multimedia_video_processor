@@ -415,8 +415,8 @@
         <row>
             <data>0h:0m:26s</data>
             <data>0h:0m:26s</data>
-            <data>0h:1m:13s</data>
-            <data>328</data>
+            <data>0h:1m:22s</data>
+            <data>329</data>
             <data>WINDOWS 10 x86_64</data>
             <data>Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz</data>
             <data>32</data>
@@ -434,37 +434,37 @@
             <data message="4">Verilog-0002: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 4)] Analyzing module multimedia_video_processor (library work)</data>
         </row>
         <row>
-            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 103)] Ansi_parameter force parameter in body to localparam</data>
+            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 89)] Ansi_parameter force parameter in body to localparam</data>
         </row>
         <row>
-            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 104)] Ansi_parameter force parameter in body to localparam</data>
+            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 90)] Ansi_parameter force parameter in body to localparam</data>
         </row>
         <row>
-            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 105)] Ansi_parameter force parameter in body to localparam</data>
+            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 91)] Ansi_parameter force parameter in body to localparam</data>
         </row>
         <row>
-            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 106)] Ansi_parameter force parameter in body to localparam</data>
+            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 92)] Ansi_parameter force parameter in body to localparam</data>
         </row>
         <row>
-            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 107)] Ansi_parameter force parameter in body to localparam</data>
+            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 93)] Ansi_parameter force parameter in body to localparam</data>
         </row>
         <row>
-            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 108)] Ansi_parameter force parameter in body to localparam</data>
+            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 94)] Ansi_parameter force parameter in body to localparam</data>
         </row>
         <row>
-            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 109)] Ansi_parameter force parameter in body to localparam</data>
+            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 95)] Ansi_parameter force parameter in body to localparam</data>
         </row>
         <row>
-            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 110)] Ansi_parameter force parameter in body to localparam</data>
+            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 96)] Ansi_parameter force parameter in body to localparam</data>
         </row>
         <row>
-            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 111)] Ansi_parameter force parameter in body to localparam</data>
+            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 97)] Ansi_parameter force parameter in body to localparam</data>
         </row>
         <row>
-            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 112)] Ansi_parameter force parameter in body to localparam</data>
+            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 98)] Ansi_parameter force parameter in body to localparam</data>
         </row>
         <row>
-            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 113)] Ansi_parameter force parameter in body to localparam</data>
+            <data message="5">Verilog-2006: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 99)] Ansi_parameter force parameter in body to localparam</data>
         </row>
         <row>
             <data message="4">Verilog-0001: Analyzing file D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/udp_osd/char_osd/char_buf_reader.v</data>
@@ -923,7 +923,7 @@
             <data message="4">Verilog-0001: Analyzing file D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v</data>
         </row>
         <row>
-            <data message="4">Verilog-0002: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 23)] Analyzing module zoom_image_v1 (library work)</data>
+            <data message="4">Verilog-0002: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 3)] Analyzing module zoom_image_v1 (library work)</data>
         </row>
         <row>
             <data message="4">Verilog-0001: Analyzing file D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/hdmi/hdmi_in/hdmi_in_top.v</data>
@@ -4512,16 +4512,16 @@
     IMAGE_W = 32'b00000000000000000000010100000000
     IMAGE_H = 32'b00000000000000000000001011010000
     IMAGE_SIZE = 32'b00000000000000000000000000001011
-    V_TOTAL = 12'b001011101110
-    V_FP = 12'b000000000101
-    V_BP = 12'b000000010100
+    V_TOTAL = 12'b010001100101
+    V_FP = 12'b000000000100
+    V_BP = 12'b000000100100
     V_SYNC = 12'b000000000101
-    V_ACT = 12'b001011010000
-    H_TOTAL = 12'b011001110010
-    H_FP = 12'b000001101110
-    H_BP = 12'b000011011100
-    H_SYNC = 12'b000000101000
-    H_ACT = 12'b010100000000
+    V_ACT = 12'b010000111000
+    H_TOTAL = 12'b100010011000
+    H_FP = 12'b000001011000
+    H_BP = 12'b000010010100
+    H_SYNC = 12'b000000101100
+    H_ACT = 12'b011110000000
     HV_OFFSET = 12'b000000000000</data>
         </row>
         <row>
@@ -5327,7 +5327,7 @@
     RANGE_MAX = 32'b00000000000000000000000011111111</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 507)] Elaborating instance u_ov5640</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 525)] Elaborating instance u_ov5640</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/ov5640/ov5640.v(line number: 3)] Elaborating module ov5640</data>
@@ -5530,13 +5530,13 @@
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/mix_fifo/mix_fifo.v(line number: 16)] Elaborating module mix_fifo</data>
         </row>
         <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 503)] Width mismatch between port shift_w and signal bound to it for instantiated module ov5640</data>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 521)] Width mismatch between port shift_w and signal bound to it for instantiated module ov5640</data>
         </row>
         <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 503)] Width mismatch between port shift_h and signal bound to it for instantiated module ov5640</data>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 521)] Width mismatch between port shift_h and signal bound to it for instantiated module ov5640</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 600)] Elaborating instance image_filiter_inst</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 618)] Elaborating instance image_filiter_inst</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/image_filiter/image_filiter.v(line number: 1)] Elaborating module image_filiter</data>
@@ -5989,7 +5989,7 @@
     DATA_WIDTH = 32'b00000000000000000000000000000101</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 618)] Elaborating instance image_filiter_inst2</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 636)] Elaborating instance image_filiter_inst2</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/image_filiter/image_filiter.v(line number: 1)] Elaborating module image_filiter</data>
@@ -6005,7 +6005,7 @@
     TH = 32'b00000000000000000000000000000100</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 638)] Elaborating instance u_rotate_image</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 656)] Elaborating instance u_rotate_image</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/rotate/rotate_image.v(line number: 23)] Elaborating module rotate_image</data>
@@ -6488,10 +6488,10 @@
             <data message="5">Verilog-2039: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/image_in_fifo/rtl/ipml_fifo_ctrl_v1_3.v(line number: 317)] Repeat multiplier in concatenation evaluates to 0</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 687)] Elaborating instance u_zoom_image</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 705)] Elaborating instance u_zoom_image</data>
         </row>
         <row>
-            <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 23)] Elaborating module zoom_image_v1</data>
+            <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 3)] Elaborating module zoom_image_v1</data>
         </row>
         <row>
             <data message="4">Module instance {multimedia_video_processor/u_zoom_image} parameter value:
@@ -6501,7 +6501,7 @@
     IMAGE_H = 32'b00000000000000000000001011010000</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 228)] Elaborating instance u_image_w_mult</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 208)] Elaborating instance u_image_w_mult</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image_w.v(line number: 23)] Elaborating module mult_image_w</data>
@@ -6515,7 +6515,7 @@
             <data message="5">Loop was found during constant probe.</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 235)] Elaborating instance u_image_h_mult</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 215)] Elaborating instance u_image_h_mult</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image_w.v(line number: 23)] Elaborating module mult_image_w</data>
@@ -6526,7 +6526,7 @@
     WIDT_B = 32'b00000000000000000000000000001010</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 356)] Elaborating instance zoom_ram0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 238)] Elaborating instance zoom_ram0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/zoom_ram/zoom_ram.v(line number: 16)] Elaborating module zoom_ram</data>
@@ -6724,61 +6724,61 @@
             <data message="5">Verilog-2020: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/zoom_ram/rtl/ipml_sdpram_v1_6_zoom_ram.v(line number: 771)] Net DB_bus[35] in ipml_sdpram_v1_6_zoom_ram(original module ipml_sdpram_v1_6_zoom_ram) does not have a driver, tie it to 0</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 367)] Elaborating instance zoom_ram1</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 249)] Elaborating instance zoom_ram1</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/zoom_ram/zoom_ram.v(line number: 16)] Elaborating module zoom_ram</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 378)] Elaborating instance zoom_ram2</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 260)] Elaborating instance zoom_ram2</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/zoom_ram/zoom_ram.v(line number: 16)] Elaborating module zoom_ram</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 389)] Elaborating instance zoom_ram3</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 271)] Elaborating instance zoom_ram3</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/zoom_ram/zoom_ram.v(line number: 16)] Elaborating module zoom_ram</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 401)] Elaborating instance zoom_ram0_0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 283)] Elaborating instance zoom_ram0_0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/zoom_ram/zoom_ram.v(line number: 16)] Elaborating module zoom_ram</data>
         </row>
         <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 401)] Width mismatch between port rd_addr and signal bound to it for instantiated module zoom_ram</data>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 283)] Width mismatch between port rd_addr and signal bound to it for instantiated module zoom_ram</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 412)] Elaborating instance zoom_ram1_0</data>
-        </row>
-        <row>
-            <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/zoom_ram/zoom_ram.v(line number: 16)] Elaborating module zoom_ram</data>
-        </row>
-        <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 412)] Width mismatch between port rd_addr and signal bound to it for instantiated module zoom_ram</data>
-        </row>
-        <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 423)] Elaborating instance zoom_ram2_0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 294)] Elaborating instance zoom_ram1_0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/zoom_ram/zoom_ram.v(line number: 16)] Elaborating module zoom_ram</data>
         </row>
         <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 423)] Width mismatch between port rd_addr and signal bound to it for instantiated module zoom_ram</data>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 294)] Width mismatch between port rd_addr and signal bound to it for instantiated module zoom_ram</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 434)] Elaborating instance zoom_ram3_0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 305)] Elaborating instance zoom_ram2_0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/zoom_ram/zoom_ram.v(line number: 16)] Elaborating module zoom_ram</data>
         </row>
         <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 434)] Width mismatch between port rd_addr and signal bound to it for instantiated module zoom_ram</data>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 305)] Width mismatch between port rd_addr and signal bound to it for instantiated module zoom_ram</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 751)] Elaborating instance mult_fra0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 316)] Elaborating instance zoom_ram3_0</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/zoom_ram/zoom_ram.v(line number: 16)] Elaborating module zoom_ram</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 316)] Width mismatch between port rd_addr and signal bound to it for instantiated module zoom_ram</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 627)] Elaborating instance mult_fra0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_fra.v(line number: 23)] Elaborating module mult_fra0</data>
@@ -6789,7 +6789,7 @@
     WIDT_B = 32'b00000000000000000000000000001000</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 757)] Elaborating instance mult_fra1</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 633)] Elaborating instance mult_fra1</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_fra.v(line number: 23)] Elaborating module mult_fra0</data>
@@ -6800,7 +6800,7 @@
     WIDT_B = 32'b00000000000000000000000000001000</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 763)] Elaborating instance mult_fra0_0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 639)] Elaborating instance mult_fra0_0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_fra.v(line number: 23)] Elaborating module mult_fra0</data>
@@ -6811,7 +6811,7 @@
     WIDT_B = 32'b00000000000000000000000000001000</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 769)] Elaborating instance mult_fra1_0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 645)] Elaborating instance mult_fra1_0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_fra.v(line number: 23)] Elaborating module mult_fra0</data>
@@ -6822,7 +6822,7 @@
     WIDT_B = 32'b00000000000000000000000000001000</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 779)] Elaborating instance mult_image_r0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 655)] Elaborating instance mult_image_r0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image.v(line number: 23)] Elaborating module mult_image_ip</data>
@@ -6833,7 +6833,7 @@
     WIDT_B = 32'b00000000000000000000000000000110</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 785)] Elaborating instance mult_image_r1</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 661)] Elaborating instance mult_image_r1</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image.v(line number: 23)] Elaborating module mult_image_ip</data>
@@ -6844,7 +6844,7 @@
     WIDT_B = 32'b00000000000000000000000000000110</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 791)] Elaborating instance mult_image_g0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 667)] Elaborating instance mult_image_g0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image.v(line number: 23)] Elaborating module mult_image_ip</data>
@@ -6855,7 +6855,7 @@
     WIDT_B = 32'b00000000000000000000000000000110</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 797)] Elaborating instance mult_image_g1</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 673)] Elaborating instance mult_image_g1</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image.v(line number: 23)] Elaborating module mult_image_ip</data>
@@ -6866,7 +6866,7 @@
     WIDT_B = 32'b00000000000000000000000000000110</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 803)] Elaborating instance mult_image_b0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 679)] Elaborating instance mult_image_b0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image.v(line number: 23)] Elaborating module mult_image_ip</data>
@@ -6877,7 +6877,7 @@
     WIDT_B = 32'b00000000000000000000000000000110</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 809)] Elaborating instance mult_image_b1</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 685)] Elaborating instance mult_image_b1</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image.v(line number: 23)] Elaborating module mult_image_ip</data>
@@ -6888,7 +6888,7 @@
     WIDT_B = 32'b00000000000000000000000000000110</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 816)] Elaborating instance mult_image_r0_0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 692)] Elaborating instance mult_image_r0_0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image.v(line number: 23)] Elaborating module mult_image_ip</data>
@@ -6899,7 +6899,7 @@
     WIDT_B = 32'b00000000000000000000000000000110</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 822)] Elaborating instance mult_image_r1_0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 698)] Elaborating instance mult_image_r1_0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image.v(line number: 23)] Elaborating module mult_image_ip</data>
@@ -6910,7 +6910,7 @@
     WIDT_B = 32'b00000000000000000000000000000110</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 828)] Elaborating instance mult_image_g0_0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 704)] Elaborating instance mult_image_g0_0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image.v(line number: 23)] Elaborating module mult_image_ip</data>
@@ -6921,7 +6921,7 @@
     WIDT_B = 32'b00000000000000000000000000000110</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 834)] Elaborating instance mult_image_g1_0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 710)] Elaborating instance mult_image_g1_0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image.v(line number: 23)] Elaborating module mult_image_ip</data>
@@ -6932,7 +6932,7 @@
     WIDT_B = 32'b00000000000000000000000000000110</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 840)] Elaborating instance mult_image_b0_0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 716)] Elaborating instance mult_image_b0_0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image.v(line number: 23)] Elaborating module mult_image_ip</data>
@@ -6943,7 +6943,7 @@
     WIDT_B = 32'b00000000000000000000000000000110</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 846)] Elaborating instance mult_image_b1_0</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/zoom_image_v1.v(line number: 722)] Elaborating instance mult_image_b1_0</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/zoom/mult_image.v(line number: 23)] Elaborating module mult_image_ip</data>
@@ -6954,7 +6954,7 @@
     WIDT_B = 32'b00000000000000000000000000000110</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 704)] Elaborating instance u_zoom_hdmi_fifo</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 722)] Elaborating instance u_zoom_hdmi_fifo</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/zoom_hdmi_fifo/zoom_hdmi_fifo.v(line number: 16)] Elaborating module zoom_hdmi_fifo</data>
@@ -8768,10 +8768,10 @@
             <data message="5">Verilog-2039: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/image_in_fifo/rtl/ipml_fifo_ctrl_v1_3.v(line number: 196)] Repeat multiplier in concatenation evaluates to 0</data>
         </row>
         <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 704)] Width mismatch between port wr_water_level and signal bound to it for instantiated module zoom_hdmi_fifo</data>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 722)] Width mismatch between port wr_water_level and signal bound to it for instantiated module zoom_hdmi_fifo</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 743)] Elaborating instance u_sync_vg</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 761)] Elaborating instance u_sync_vg</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/hdmi/hdmi_out/sync_vg.v(line number: 35)] Elaborating module sync_vg</data>
@@ -8781,31 +8781,31 @@
     X_BITS = 32'b00000000000000000000000000001100
     Y_BITS = 32'b00000000000000000000000000001100
     HDMI_1080P_EN = 32'b00000000000000000000000000000000
-    V_TOTAL = 12'b001011101110
-    V_FP = 12'b000000000101
-    V_BP = 12'b000000010100
+    V_TOTAL = 12'b010001100101
+    V_FP = 12'b000000000100
+    V_BP = 12'b000000100100
     V_SYNC = 12'b000000000101
-    V_ACT = 12'b001011010000
-    H_TOTAL = 12'b011001110010
-    H_FP = 12'b000001101110
-    H_BP = 12'b000011011100
-    H_SYNC = 12'b000000101000
-    H_ACT = 12'b010100000000
+    V_ACT = 12'b010000111000
+    H_TOTAL = 12'b100010011000
+    H_FP = 12'b000001011000
+    H_BP = 12'b000010010100
+    H_SYNC = 12'b000000101100
+    H_ACT = 12'b011110000000
     HV_OFFSET = 12'b000000000000</data>
         </row>
         <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 732)] Width mismatch between port rd_mode and signal bound to it for instantiated module sync_vg</data>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 750)] Width mismatch between port rd_mode and signal bound to it for instantiated module sync_vg</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 781)] Elaborating instance udp_osd_inst</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 799)] Elaborating instance udp_osd_inst</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/udp_osd/udp_osd.v(line number: 3)] Elaborating module udp_osd</data>
         </row>
         <row>
             <data message="4">Module instance {multimedia_video_processor/udp_osd_inst} parameter value:
-    SCREEN_WIDTH = 32'b00000000000000000000010100000000
-    SCREEN_HEIGHT = 32'b00000000000000000000001011010000
+    SCREEN_WIDTH = 32'b00000000000000000000011110000000
+    SCREEN_HEIGHT = 32'b00000000000000000000010000111000
     PIXEL_DATA_WIDTH = 32'b00000000000000000000000000011000
     R_DATA_WIDTH = 32'b00000000000000000000000000001000
     G_DATA_WIDTH = 32'b00000000000000000000000000001000
@@ -9407,8 +9407,8 @@
     CHAR_BUFFER_ADDR_WIDTH = 32'b00000000000000000000000000001011
     CHAR_PIC_WIDTH = 32'b00000000000000000000000000001001
     CHAR_PIC_HEIGHT = 32'b00000000000000000000000000010010
-    SCREEN_WIDTH = 32'b00000000000000000000010100000000
-    SCREEN_HEIGHT = 32'b00000000000000000000001011010000</data>
+    SCREEN_WIDTH = 32'b00000000000000000000011110000000
+    SCREEN_HEIGHT = 32'b00000000000000000000010000111000</data>
         </row>
         <row>
             <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/udp_osd/char_osd/char_osd.v(line number: 55)] Elaborating instance char_buf_reader_inst</data>
@@ -9421,8 +9421,8 @@
     STRLENDATA_SAVED_ADDR = 32'b00000000000000000000001111111111
     CHAR_BUFFER_ADDR_WIDTH = 32'b00000000000000000000000000001011
     CHAR_PIC_HEIGHT = 32'b00000000000000000000000000010010
-    SCREEN_WIDTH = 32'b00000000000000000000010100000000
-    SCREEN_HEIGHT = 32'b00000000000000000000001011010000</data>
+    SCREEN_WIDTH = 32'b00000000000000000000011110000000
+    SCREEN_HEIGHT = 32'b00000000000000000000010000111000</data>
         </row>
         <row>
             <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/udp_osd/char_osd/char_osd.v(line number: 83)] Elaborating instance char_pic_rom_inst</data>
@@ -9579,8 +9579,8 @@
         <row>
             <data message="4">Module instance {multimedia_video_processor/udp_osd_inst/char_osd_inst/pixels_shifter_inst} parameter value:
     CHAR_PIC_WIDTH = 32'b00000000000000000000000000001001
-    SCREEN_WIDTH = 32'b00000000000000000000010100000000
-    SCREEN_HEIGHT = 32'b00000000000000000000001011010000</data>
+    SCREEN_WIDTH = 32'b00000000000000000000011110000000
+    SCREEN_HEIGHT = 32'b00000000000000000000010000111000</data>
         </row>
         <row>
             <data message="5">Verilog-2036: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/udp_osd/udp_osd.v(line number: 123)] Net udp_tx_m_data connected to input port of module instance multimedia_video_processor/udp_osd_inst.eth_udp_inst has no driver, tie it to 0</data>
@@ -9598,13 +9598,13 @@
             <data message="5">Verilog-2036: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/udp_osd/udp_osd.v(line number: 123)] Net udp_tx_m_last connected to input port of module instance multimedia_video_processor/udp_osd_inst.eth_udp_inst has no driver, tie it to 0</data>
         </row>
         <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 774)] Width mismatch between port cfg_end_posX and signal bound to it for instantiated module udp_osd</data>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 792)] Width mismatch between port cfg_end_posX and signal bound to it for instantiated module udp_osd</data>
         </row>
         <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 774)] Width mismatch between port cfg_end_posY and signal bound to it for instantiated module udp_osd</data>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 792)] Width mismatch between port cfg_end_posY and signal bound to it for instantiated module udp_osd</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 825)] Elaborating instance adjust_color_wrapper_inst</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 843)] Elaborating instance adjust_color_wrapper_inst</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/adjust_color/adjust_color_wrapper.v(line number: 1)] Elaborating module adjust_color_wrapper</data>
@@ -9978,7 +9978,7 @@
             <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/adjust_color/adjust_color_wrapper.v(line number: 29)] Width mismatch between port pixel_s_valid and signal bound to it for instantiated module adjust_color</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 856)] Elaborating instance u_ddr_addr_ctr</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 874)] Elaborating instance u_ddr_addr_ctr</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/ddr/addr_ctrl/ddr_addr_ctr.v(line number: 1)] Elaborating module ddr_addr_ctr</data>
@@ -10333,19 +10333,19 @@
     WIDTH = 32'b00000000000000000000000000000101</data>
         </row>
         <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 849)] Width mismatch between port shift_h and signal bound to it for instantiated module ddr_addr_ctr</data>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 867)] Width mismatch between port shift_h and signal bound to it for instantiated module ddr_addr_ctr</data>
         </row>
         <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 849)] Width mismatch between port rd1_mode and signal bound to it for instantiated module ddr_addr_ctr</data>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 867)] Width mismatch between port rd1_mode and signal bound to it for instantiated module ddr_addr_ctr</data>
         </row>
         <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 849)] Width mismatch between port rd2_vs and signal bound to it for instantiated module ddr_addr_ctr</data>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 867)] Width mismatch between port rd2_vs and signal bound to it for instantiated module ddr_addr_ctr</data>
         </row>
         <row>
-            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 849)] Width mismatch between port hdmi_out_mode and signal bound to it for instantiated module ddr_addr_ctr</data>
+            <data message="5">Verilog-2019: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 867)] Width mismatch between port hdmi_out_mode and signal bound to it for instantiated module ddr_addr_ctr</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 937)] Elaborating instance u_axi_ddr_top</data>
+            <data message="4">Verilog-0004: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 955)] Elaborating instance u_axi_ddr_top</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/ddr/rd_wr_ctrl/axi_ddr_top.v(line number: 7)] Elaborating module axi_ddr_top</data>
@@ -17279,16 +17279,16 @@
             <data message="5">Verilog-2039: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/project/ipcore/image_in_fifo/rtl/ipml_fifo_ctrl_v1_3.v(line number: 196)] Repeat multiplier in concatenation evaluates to 0</data>
         </row>
         <row>
-            <data message="5">Verilog-2036: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 856)] Net sift_done connected to input port of module instance multimedia_video_processor.u_ddr_addr_ctr has no driver, tie it to 0</data>
+            <data message="5">Verilog-2036: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 874)] Net sift_done connected to input port of module instance multimedia_video_processor.u_ddr_addr_ctr has no driver, tie it to 0</data>
         </row>
         <row>
-            <data message="5">Verilog-2036: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 937)] Net wr2_data_in_valid connected to input port of module instance multimedia_video_processor.u_axi_ddr_top has no driver, tie it to 0</data>
+            <data message="5">Verilog-2036: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 955)] Net wr2_data_in_valid connected to input port of module instance multimedia_video_processor.u_axi_ddr_top has no driver, tie it to 0</data>
         </row>
         <row>
-            <data message="5">Verilog-2036: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 937)] Net wr2_data_in connected to input port of module instance multimedia_video_processor.u_axi_ddr_top has no driver, tie it to 0</data>
+            <data message="5">Verilog-2036: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 955)] Net wr2_data_in connected to input port of module instance multimedia_video_processor.u_axi_ddr_top has no driver, tie it to 0</data>
         </row>
         <row>
-            <data message="5">Verilog-2021: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 1002)] Net hdmi_out_en in multimedia_video_processor(original module multimedia_video_processor) does not have a driver, tie it to 0</data>
+            <data message="5">Verilog-2021: [D:/Project/FPGA_Project/Pango/multimedia_video_processor/sources/designs/multimedia_video_processor.v(line number: 1020)] Net hdmi_out_en in multimedia_video_processor(original module multimedia_video_processor) does not have a driver, tie it to 0</data>
         </row>
         <row>
             <data message="5">Loop was found during constant probe.</data>
@@ -18612,6 +18612,9 @@
         </row>
         <row>
             <data message="4">Removed inst init_ras_n that is redundant to init_cas_n.</data>
+        </row>
+        <row>
+            <data message="4">Removed inst zoom_vs_out0 that is redundant to hdmi_vs_out1.</data>
         </row>
         <row>
             <data message="5">Loop was found during constant probe.</data>

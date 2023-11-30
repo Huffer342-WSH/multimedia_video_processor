@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2023/09/28 15:36:41
-// Design Name: 
-// Module Name: zoom_image
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module zoom_image_v1 #(
     parameter IMAGE_SIZE = 11,
@@ -239,24 +219,6 @@ module zoom_image_v1 #(
       .P  (mult_h)       // output wire [18 : 0] P
   );
 
-  //image_w_mult u_image_w_mult (
-  //  .a(cnt_w),        // input [10:0]
-  //  .b(zoom_num0),        // input [9:0]
-  //  .clk(clk),    // input
-  //  .rst(rst),    // input
-  //  .ce(1'b1),      // input
-  //  .p(mult_w)         // output [20:0]
-  //);
-  //
-  //image_w_mult u_image_h_mult (
-  //  .a(cnt_h),        // input [10:0]
-  //  .b(zoom_num0),        // input [9:0]
-  //  .clk(clk),    // input
-  //  .rst(rst),    // input
-  //  .ce(1'b1),      // input
-  //  .p(mult_h)         // output [20:0]
-  //);
-  // STORE RAM 
 
   reg [IMAGE_SIZE - 1:0] wr_addr0;
   reg [IMAGE_SIZE - 1:0] wr_addr1;
@@ -273,86 +235,6 @@ module zoom_image_v1 #(
   wire [15:0] doutb2, doutb2_0;
   wire [15:0] doutb3, doutb3_0;
   reg [3:0] ram_sta;
-  //zoom_ram u_zoom_ram0 (
-  //  .clka(clk),    // input wire clka
-  //  .ena(data_in_valid0&(ram_sta[0])),      // input wire ena
-  //  .wea(1'b1),      // input wire [0 : 0] wea
-  //  .addra(wr_addr0),  // input wire [10 : 0] addra
-  //  .dina(data_in0),    // input wire [15 : 0] dina
-  //  .clkb(clk),    // input wire clkb
-  //  .addrb(rd_addr0),  // input wire [10 : 0] addrb
-  //  .doutb(doutb0)  // output wire [15 : 0] doutb
-  //);
-  //zoom_ram u_zoom_ram1 (
-  //  .clka(clk),    // input wire clka
-  //  .ena(data_in_valid1&(ram_sta[1])),      // input wire ena
-  //  .wea(1'b1),      // input wire [0 : 0] wea
-  //  .addra(wr_addr1),  // input wire [10 : 0] addra
-  //  .dina(data_in1),    // input wire [15 : 0] dina
-  //  .clkb(clk),    // input wire clkb
-  //  .addrb(rd_addr1),  // input wire [10 : 0] addrb
-  //  .doutb(doutb1)  // output wire [15 : 0] doutb
-  //);
-  //zoom_ram u_zoom_ram2 (
-  //  .clka(clk),    // input wire clka
-  //  .ena(data_in_valid2&(ram_sta[2])),      // input wire ena
-  //  .wea(1'b1),      // input wire [0 : 0] wea
-  //  .addra(wr_addr2),  // input wire [10 : 0] addra
-  //  .dina(data_in2),    // input wire [15 : 0] dina
-  //  .clkb(clk),    // input wire clkb
-  //  .addrb(rd_addr2),  // input wire [10 : 0] addrb
-  //  .doutb(doutb2)  // output wire [15 : 0] doutb
-  //);
-  //zoom_ram u_zoom_ram3 (
-  //  .clka(clk),    // input wire clka
-  //  .ena(data_in_valid3&(ram_sta[3])),      // input wire ena
-  //  .wea(1'b1),      // input wire [0 : 0] wea
-  //  .addra(wr_addr3),  // input wire [10 : 0] addra
-  //  .dina(data_in3),    // input wire [15 : 0] dina
-  //  .clkb(clk),    // input wire clkb
-  //  .addrb(rd_addr3),  // input wire [10 : 0] addrb
-  //  .doutb(doutb3)  // output wire [15 : 0] doutb
-  //);
-  //zoom_ram u_zoom_ram0_0 (
-  //  .clka(clk),    // input wire clka
-  //  .ena(data_in_valid0&(ram_sta[0])),      // input wire ena
-  //  .wea(1'b1),      // input wire [0 : 0] wea
-  //  .addra(wr_addr0),  // input wire [10 : 0] addra
-  //  .dina(data_in0),    // input wire [15 : 0] dina
-  //  .clkb(clk),    // input wire clkb
-  //  .addrb(rd_addr0+1),  // input wire [10 : 0] addrb
-  //  .doutb(doutb0_0)  // output wire [15 : 0] doutb
-  //);
-  //zoom_ram u_zoom_ram1_0 (
-  //  .clka(clk),    // input wire clka
-  //  .ena(data_in_valid1&(ram_sta[1])),      // input wire ena
-  //  .wea(1'b1),      // input wire [0 : 0] wea
-  //  .addra(wr_addr1),  // input wire [10 : 0] addra
-  //  .dina(data_in1),    // input wire [15 : 0] dina
-  //  .clkb(clk),    // input wire clkb
-  //  .addrb(rd_addr1+1),  // input wire [10 : 0] addrb
-  //  .doutb(doutb1_0)  // output wire [15 : 0] doutb
-  //);
-  //zoom_ram u_zoom_ram2_0 (
-  //  .clka(clk),    // input wire clka
-  //  .ena(data_in_valid2&(ram_sta[2])),      // input wire ena
-  //  .wea(1'b1),      // input wire [0 : 0] wea
-  //  .addra(wr_addr2),  // input wire [10 : 0] addra
-  //  .dina(data_in2),    // input wire [15 : 0] dina
-  //  .clkb(clk),    // input wire clkb
-  //  .addrb(rd_addr2+1),  // input wire [10 : 0] addrb
-  //  .doutb(doutb2_0)  // output wire [15 : 0] doutb
-  //);
-  //zoom_ram u_zoom_ram3_0 (
-  //  .clka(clk),    // input wire clka
-  //  .ena(data_in_valid3&(ram_sta[3])),      // input wire ena
-  //  .wea(1'b1),      // input wire [0 : 0] wea
-  //  .addra(wr_addr3),  // input wire [10 : 0] addra
-  //  .dina(data_in3),    // input wire [15 : 0] dina
-  //  .clkb(clk),    // input wire clkb
-  //  .addrb(rd_addr3+1),  // input wire [10 : 0] addrb
-  //  .doutb(doutb3_0)  // output wire [15 : 0] doutb
-  //);
   zoom_ram zoom_ram0 (
       .wr_data(data_in0),                       // input [15:0]
       .wr_addr(wr_addr0),                       // input [10:0]
@@ -554,15 +436,11 @@ module zoom_image_v1 #(
       case (addr_sta)
         'd1: begin
           imag_addr0 <= imag_addr0;
-          //if((mult_h0>=-(IMAGE_H/2)&&mult_h0<(IMAGE_H/2-1)&&(zoom_sta_param1)))
-          if ((mult_h2 < (IMAGE_H / 2) && (zoom_sta_param1)))
-            //if(zoom_sta_param1)
-            addr_sta <= 'd2;
+          if ((mult_h2 < (IMAGE_H / 2) && (zoom_sta_param1))) addr_sta <= 'd2;
           else addr_sta <= 'd1;
         end
         'd2: begin
           imag_addr0 <= imag_addr0;
-          //if((mult_h0[0+:IMAGE_SIZE+3] != store_addr)|(~ram_idle))
           if ((mult_h2 != store_addr) | (~ram_idle)) addr_sta <= 'd4;
           else begin
             no_need_rd_ddr = 1'b1;
@@ -570,10 +448,8 @@ module zoom_image_v1 #(
           end
         end
         'd4: begin
-          //if(mult_h0[0+:IMAGE_SIZE+3] == (store_addr+1))
           if (mult_h2 == (store_addr_add_one)) begin
             addr_sta   <= 'd16;
-            //no_one_need_rd_ddr = 1'b1 ;
             imag_addr0 <= mult_h1 + 1'b1;
           end else begin
             addr_sta   <= 'd8;
@@ -874,11 +750,8 @@ module zoom_image_v1 #(
   };
   // 3 + 4 + 4 
   always @(posedge clk) begin
-    //hdmi_out_en0 <= hdmi_out_en ;
     if (image_valid[6][0]) data_out1 <= 'd0;
     else data_out1 <= data_out0;
-    //if((((~image_valid[7][2])|hdmi_out_en0)&(image_valid[7][1]|image_valid[7][0])))
-    //data_out1 <= data_out0 ;
     if (image_valid[6][1] | image_valid[6][0]) data_out_valid1 <= 1'b1;
     else data_out_valid1 <= 1'b0;
   end
@@ -919,17 +792,9 @@ module zoom_image_v1 #(
   always @(posedge clk) begin
     hdmi_out_en1    <= hdmi_out_en0 ;
     data_out_valid2 <= data_out_valid1 ;
-    //if((cnt_hh>=IMAGE_H/2)&&((cnt_ww >= IMAGE_W/2))&&hdmi_out_en0)
-    //     data_out_valid2 <= 'd0 ;
-    //else 
-    //     data_out_valid2 <= data_out_valid1 ;
   end
   always @(posedge clk) begin
     data_out2 <= data_out1;
-    //if((cnt_hh>=IMAGE_H/2))
-    //     data_out2 <= 16'hffff ;
-    //else 
-    //     data_out2 <= data_out1 ;
   end
 
   assign data_out = data_out2;

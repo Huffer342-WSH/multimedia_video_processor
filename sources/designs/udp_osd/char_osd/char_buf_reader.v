@@ -38,7 +38,7 @@ module char_buf_reader #(
     output reg [10:0] char_pos_y,
 
     output reg char_valid,  //数据有效信号，从收到char_next到输出下一个字符需要一定时间，此时valid会拉低
-    input      char_next    //收到该信号后，切换到下一个字符。
+    input char_next  //收到该信号后，切换到下一个字符。
 
 
 );
@@ -113,25 +113,23 @@ module char_buf_reader #(
     end else begin
       case (state)
         S_READ_STRLEN: begin
-          if (cnt == 4) begin
-            if ({str_len[15:8], ram_data} == 0) begin
-              cnt   <= 0;
-              state <= S_READ_STRLEN;
-            end else begin
-              state <= S_SHOW_CHAR;
-              cnt   <= 0;
-            end
+          if (cnt == 4 && {str_len[15:8], ram_data} == 0) begin
+            cnt   <= 0;
+            state <= S_READ_STRLEN;
+          end else if (cnt == 4) begin
+            state <= S_SHOW_CHAR;
+            cnt   <= 0;
           end else begin
-            state <= state;
+            state <= S_READ_STRLEN;
             cnt   <= cnt + 1;
           end
         end
-
         S_SHOW_CHAR: begin
           if (ram_addr >= str_len) begin
             state <= S_READ_STRLEN;
             cnt   <= 0;
-          end else if (char_next && (ram_addr == str_len - 1) && (row_cnt == CHAR_PIC_HEIGHT - 1)) begin
+          end else
+              if (char_next && (ram_addr == str_len - 1) && (row_cnt == CHAR_PIC_HEIGHT - 1)) begin
             //??有数据都读完??
             state <= S_READ_STRLEN;
             cnt   <= 0;
@@ -151,7 +149,6 @@ module char_buf_reader #(
             state <= S_SHOW_CHAR;
           end
         end
-
         S_WAIT_CHAR: begin
           cnt <= cnt + 1;
           if (cnt == 1) begin
@@ -161,8 +158,6 @@ module char_buf_reader #(
             state <= S_WAIT_CHAR;
           end
         end
-
-
 
         S_LF: begin
           cnt <= cnt + 1;
@@ -318,7 +313,8 @@ module char_buf_reader #(
       start_char_ptr <= 0;
     end else if (state == S_LF && cnt == 0 && row_cnt == CHAR_PIC_HEIGHT - 1) begin
       start_char_ptr <= ram_addr;
-    end else if (state == S_CR && cnt == 2 && ram_data != ASCII_LF && row_cnt == CHAR_PIC_HEIGHT - 1) begin
+    end else if (state == S_CR && cnt == 2 && ram_data != ASCII_LF &&
+                 row_cnt == CHAR_PIC_HEIGHT - 1) begin
       start_char_ptr <= ram_addr;
     end else begin
       start_char_ptr <= start_char_ptr;
@@ -368,7 +364,8 @@ module char_buf_reader #(
       char_valid <= 0;
     end else if (char_valid && char_next) begin
       char_valid <= 0;
-    end else if (state == S_SHOW_CHAR && (ram_data != ASCII_SPACE) && (ram_data != ASCII_LF) && (ram_data != ASCII_CR) && (ram_addr < str_len)) begin
+    end else if (state == S_SHOW_CHAR && (ram_data != ASCII_SPACE) && (ram_data != ASCII_LF) &&
+                 (ram_data != ASCII_CR) && (ram_addr < str_len)) begin
       char_valid <= 1;
     end else begin
       char_valid <= char_valid;

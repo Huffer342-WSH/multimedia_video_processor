@@ -5,18 +5,17 @@ Setup Summary(Slow Corner):
                                                                           TNS Failing      TNS Total
  Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
 ----------------------------------------------------------------------------------------------------
- cmos1_pclk             cmos1_pclk                   5.348       0.000              0            251
- cmos2_pclk             cmos2_pclk                   4.387       0.000              0            251
- hdmi_in_clk            hdmi_in_clk                  1.866       0.000              0            311
- eth_rxc                eth_rxc                      1.165       0.000              0           5918
- clk_50m                clk_50m                     10.408       0.000              0           9493
- clk_200m               clk_200m                     1.141       0.000              0            258
- clk_25m                clk_25m                     35.531       0.000              0             30
- clk_10m                clk_10m                     94.646       0.000              0           1092
- clk_1080p60Hz          clk_1080p60Hz                1.098       0.000              0           3524
- clk_720p60Hz           clk_720p60Hz                 6.064       0.000              0           4786
- clk_20k                clk_20k                  49994.640       0.000              0            177
- ddrphy_clkin           ddrphy_clkin                 2.548       0.000              0          18286
+ cmos1_pclk             cmos1_pclk                   5.651       0.000              0            251
+ cmos2_pclk             cmos2_pclk                   4.363       0.000              0            251
+ hdmi_in_clk            hdmi_in_clk                  1.879       0.000              0            311
+ eth_rxc                eth_rxc                      1.315       0.000              0           5998
+ clk_50m                clk_50m                     10.409       0.000              0           9493
+ clk_200m               clk_200m                     1.327       0.000              0            258
+ clk_25m                clk_25m                     35.392       0.000              0             30
+ clk_10m                clk_10m                     94.393       0.000              0           1087
+ clk_1080p60Hz          clk_1080p60Hz                0.529       0.000              0           8423
+ clk_20k                clk_20k                  49994.534       0.000              0            177
+ ddrphy_clkin           ddrphy_clkin                 1.805       0.000              0          18216
  ioclk0                 ioclk0                       1.692       0.000              0             24
  ioclk1                 ioclk1                       1.692       0.000              0             72
 ====================================================================================================
@@ -28,16 +27,15 @@ Hold Summary(Slow Corner):
 ----------------------------------------------------------------------------------------------------
  cmos1_pclk             cmos1_pclk                   0.171       0.000              0            251
  cmos2_pclk             cmos2_pclk                   0.406       0.000              0            251
- hdmi_in_clk            hdmi_in_clk                  0.185       0.000              0            311
- eth_rxc                eth_rxc                      0.145       0.000              0           5918
- clk_50m                clk_50m                      0.188       0.000              0           9493
- clk_200m               clk_200m                     0.311       0.000              0            258
+ hdmi_in_clk            hdmi_in_clk                  0.172       0.000              0            311
+ eth_rxc                eth_rxc                      0.382       0.000              0           5998
+ clk_50m                clk_50m                      0.176       0.000              0           9493
+ clk_200m               clk_200m                     0.339       0.000              0            258
  clk_25m                clk_25m                      0.549       0.000              0             30
- clk_10m                clk_10m                      0.286       0.000              0           1092
- clk_1080p60Hz          clk_1080p60Hz                0.209       0.000              0           3524
- clk_720p60Hz           clk_720p60Hz                 0.313       0.000              0           4786
- clk_20k                clk_20k                      0.356       0.000              0            177
- ddrphy_clkin           ddrphy_clkin                 0.151       0.000              0          18286
+ clk_10m                clk_10m                      0.252       0.000              0           1087
+ clk_1080p60Hz          clk_1080p60Hz                0.312       0.000              0           8423
+ clk_20k                clk_20k                      0.371       0.000              0            177
+ ddrphy_clkin           ddrphy_clkin                 0.149       0.000              0          18216
  ioclk0                 ioclk0                       0.450       0.000              0             24
  ioclk1                 ioclk1                       0.450       0.000              0             72
 ====================================================================================================
@@ -47,12 +45,11 @@ Recovery Summary(Slow Corner):
                                                                           TNS Failing      TNS Total
  Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
 ----------------------------------------------------------------------------------------------------
- clk_50m                clk_50m                     15.838       0.000              0            192
- clk_200m               clk_200m                     1.238       0.000              0             69
- clk_10m                clk_10m                     97.807       0.000              0              1
- clk_1080p60Hz          clk_1080p60Hz                3.317       0.000              0            106
- clk_720p60Hz           clk_720p60Hz                 9.028       0.000              0            717
- ddrphy_clkin           ddrphy_clkin                 5.761       0.000              0           2569
+ clk_50m                clk_50m                     16.075       0.000              0            192
+ clk_200m               clk_200m                     2.000       0.000              0             69
+ clk_10m                clk_10m                     97.887       0.000              0              1
+ clk_1080p60Hz          clk_1080p60Hz                3.273       0.000              0            828
+ ddrphy_clkin           ddrphy_clkin                 5.148       0.000              0           2566
 ====================================================================================================
 
 Removal Summary(Slow Corner):
@@ -60,12 +57,11 @@ Removal Summary(Slow Corner):
                                                                           THS Failing      THS Total
  Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
 ----------------------------------------------------------------------------------------------------
- clk_50m                clk_50m                      0.592       0.000              0            192
- clk_200m               clk_200m                     0.546       0.000              0             69
- clk_10m                clk_10m                      1.253       0.000              0              1
- clk_1080p60Hz          clk_1080p60Hz                1.201       0.000              0            106
- clk_720p60Hz           clk_720p60Hz                 0.940       0.000              0            717
- ddrphy_clkin           ddrphy_clkin                 0.616       0.000              0           2569
+ clk_50m                clk_50m                      0.481       0.000              0            192
+ clk_200m               clk_200m                     0.548       0.000              0             69
+ clk_10m                clk_10m                      1.261       0.000              0              1
+ clk_1080p60Hz          clk_1080p60Hz                0.654       0.000              0            828
+ ddrphy_clkin           ddrphy_clkin                 0.708       0.000              0           2566
 ====================================================================================================
 
 Minimum Pulse Width Summary(Slow Corner):
@@ -80,18 +76,17 @@ Setup Summary(Fast Corner):
                                                                           TNS Failing      TNS Total
  Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
 ----------------------------------------------------------------------------------------------------
- cmos1_pclk             cmos1_pclk                   6.465       0.000              0            251
- cmos2_pclk             cmos2_pclk                   5.887       0.000              0            251
- hdmi_in_clk            hdmi_in_clk                  3.174       0.000              0            311
- eth_rxc                eth_rxc                      3.107       0.000              0           5918
- clk_50m                clk_50m                     13.002       0.000              0           9493
- clk_200m               clk_200m                     2.144       0.000              0            258
- clk_25m                clk_25m                     36.816       0.000              0             30
- clk_10m                clk_10m                     96.197       0.000              0           1092
- clk_1080p60Hz          clk_1080p60Hz                2.501       0.000              0           3524
- clk_720p60Hz           clk_720p60Hz                 8.248       0.000              0           4786
- clk_20k                clk_20k                  49996.134       0.000              0            177
- ddrphy_clkin           ddrphy_clkin                 4.710       0.000              0          18286
+ cmos1_pclk             cmos1_pclk                   6.804       0.000              0            251
+ cmos2_pclk             cmos2_pclk                   5.996       0.000              0            251
+ hdmi_in_clk            hdmi_in_clk                  3.233       0.000              0            311
+ eth_rxc                eth_rxc                      3.136       0.000              0           5998
+ clk_50m                clk_50m                     13.094       0.000              0           9493
+ clk_200m               clk_200m                     2.391       0.000              0            258
+ clk_25m                clk_25m                     36.710       0.000              0             30
+ clk_10m                clk_10m                     96.025       0.000              0           1087
+ clk_1080p60Hz          clk_1080p60Hz                2.149       0.000              0           8423
+ clk_20k                clk_20k                  49996.058       0.000              0            177
+ ddrphy_clkin           ddrphy_clkin                 4.204       0.000              0          18216
  ioclk0                 ioclk0                       1.834       0.000              0             24
  ioclk1                 ioclk1                       1.834       0.000              0             72
 ====================================================================================================
@@ -102,17 +97,16 @@ Hold Summary(Fast Corner):
  Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
 ----------------------------------------------------------------------------------------------------
  cmos1_pclk             cmos1_pclk                   0.100       0.000              0            251
- cmos2_pclk             cmos2_pclk                   0.250       0.000              0            251
- hdmi_in_clk            hdmi_in_clk                  0.102       0.000              0            311
- eth_rxc                eth_rxc                      0.064       0.000              0           5918
- clk_50m                clk_50m                      0.132       0.000              0           9493
- clk_200m               clk_200m                     0.239       0.000              0            258
+ cmos2_pclk             cmos2_pclk                   0.252       0.000              0            251
+ hdmi_in_clk            hdmi_in_clk                  0.100       0.000              0            311
+ eth_rxc                eth_rxc                      0.250       0.000              0           5998
+ clk_50m                clk_50m                      0.135       0.000              0           9493
+ clk_200m               clk_200m                     0.264       0.000              0            258
  clk_25m                clk_25m                      0.387       0.000              0             30
- clk_10m                clk_10m                      0.231       0.000              0           1092
- clk_1080p60Hz          clk_1080p60Hz                0.155       0.000              0           3524
- clk_720p60Hz           clk_720p60Hz                 0.251       0.000              0           4786
- clk_20k                clk_20k                      0.253       0.000              0            177
- ddrphy_clkin           ddrphy_clkin                 0.100       0.000              0          18286
+ clk_10m                clk_10m                      0.195       0.000              0           1087
+ clk_1080p60Hz          clk_1080p60Hz                0.251       0.000              0           8423
+ clk_20k                clk_20k                      0.296       0.000              0            177
+ ddrphy_clkin           ddrphy_clkin                 0.105       0.000              0          18216
  ioclk0                 ioclk0                       0.383       0.000              0             24
  ioclk1                 ioclk1                       0.383       0.000              0             72
 ====================================================================================================
@@ -122,12 +116,11 @@ Recovery Summary(Fast Corner):
                                                                           TNS Failing      TNS Total
  Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
 ----------------------------------------------------------------------------------------------------
- clk_50m                clk_50m                     17.011       0.000              0            192
- clk_200m               clk_200m                     2.226       0.000              0             69
- clk_10m                clk_10m                     98.389       0.000              0              1
- clk_1080p60Hz          clk_1080p60Hz                4.325       0.000              0            106
- clk_720p60Hz           clk_720p60Hz                10.187       0.000              0            717
- ddrphy_clkin           ddrphy_clkin                 6.941       0.000              0           2569
+ clk_50m                clk_50m                     17.130       0.000              0            192
+ clk_200m               clk_200m                     2.761       0.000              0             69
+ clk_10m                clk_10m                     98.446       0.000              0              1
+ clk_1080p60Hz          clk_1080p60Hz                4.239       0.000              0            828
+ ddrphy_clkin           ddrphy_clkin                 6.485       0.000              0           2566
 ====================================================================================================
 
 Removal Summary(Fast Corner):
@@ -135,12 +128,11 @@ Removal Summary(Fast Corner):
                                                                           THS Failing      THS Total
  Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
 ----------------------------------------------------------------------------------------------------
- clk_50m                clk_50m                      0.439       0.000              0            192
- clk_200m               clk_200m                     0.445       0.000              0             69
- clk_10m                clk_10m                      0.866       0.000              0              1
- clk_1080p60Hz          clk_1080p60Hz                0.825       0.000              0            106
- clk_720p60Hz           clk_720p60Hz                 0.687       0.000              0            717
- ddrphy_clkin           ddrphy_clkin                 0.460       0.000              0           2569
+ clk_50m                clk_50m                      0.369       0.000              0            192
+ clk_200m               clk_200m                     0.447       0.000              0             69
+ clk_10m                clk_10m                      0.881       0.000              0              1
+ clk_1080p60Hz          clk_1080p60Hz                0.492       0.000              0            828
+ ddrphy_clkin           ddrphy_clkin                 0.543       0.000              0           2566
 ====================================================================================================
 
 Minimum Pulse Width Summary(Fast Corner):

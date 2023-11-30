@@ -1,6 +1,6 @@
 `timescale 1ns / 100ps
-// `define RES_1080P
-`define RES_720P
+`define RES_1080P
+//`define RES_720P
 module multimedia_video_processor #(
     parameter ADDR_WIDTH   = 30,
     parameter WR_NUM_WIDTH = 16,
@@ -492,6 +492,24 @@ module multimedia_video_processor #(
       .modify_V(param_modify_V)
   );
 
+  reg [17:0] param_rotate_A_t;
+  reg [ 9:0] param_rotate_A_d;
+  reg [ 9:0] param_zoom_t;
+  reg [ 9:0] param_zoom_d;
+  always @(posedge gmii_clk) begin
+    if (param_zoom > 128 && param_zoom < 256) begin
+      param_rotate_A_t = param_rotate_A * param_zoom[7:0];
+      param_zoom_t = 128;
+    end else begin
+      param_rotate_A_t = {param_rotate_A, {7'b0}};
+      param_zoom_t = param_zoom;
+    end
+  end
+
+  always @(posedge gmii_clk) begin
+    param_zoom_d <= param_zoom_t;
+    param_rotate_A_d <= param_rotate_A_t[16:7];
+  end
 
   //---------------------------------------------------------------
   // 摄像头输入
@@ -640,7 +658,7 @@ module multimedia_video_processor #(
       .rst(wr3_rst),
 
       .rotate_angle    (param_rotate),
-      .rotate_amplitude(param_rotate_A),
+      .rotate_amplitude(param_rotate_A_d),
       .offsetX         (param_offsetX),
       .offsetY         (param_offsetY),
 
@@ -674,7 +692,7 @@ module multimedia_video_processor #(
       zoom_ff1 <= 128;
       zoom_ff2 <= 128;
     end else begin
-      zoom_ff0 <= param_zoom;
+      zoom_ff0 <= param_zoom_d;
       zoom_ff1 <= zoom_ff0;
       zoom_ff2 <= zoom_ff1;
     end

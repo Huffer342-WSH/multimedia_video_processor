@@ -56,7 +56,7 @@ class MyWidget(QWidget):
         self.filters_info = [
             {"name": "滤波器1    ", "default_value": 0, "min_value": 0, "max_value": 4,"mem_addr":0,"mem_width":1},
             {"name": "滤波器2    ", "default_value": 0, "min_value": 0, "max_value": 4,"mem_addr":1,"mem_width":1},
-            {"name": "放大系数   ", "default_value": 128, "min_value":1, "max_value": 128,"mem_addr":2,"mem_width":2},
+            {"name": "放大系数   ", "default_value": 128, "min_value":1, "max_value": 1023,"mem_addr":2,"mem_width":2},
             {"name": "旋转       ", "default_value": 0, "min_value": 0, "max_value": 255,"mem_addr":4,"mem_width":1},
             {"name": "OSD起始X       ", "default_value": 10, "min_value": 1, "max_value": 1920,"mem_addr":5,"mem_width":2},
             {"name": "OSD起始Y       ", "default_value": 10, "min_value": 2, "max_value": 1000,"mem_addr":7,"mem_width":2},
